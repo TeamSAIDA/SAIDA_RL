@@ -1,0 +1,1015 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>core package &mdash; SAIDA_RL  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="/SAIDA_RL/assets/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="/SAIDA_RL/assets/documentation_options.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/jquery.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/underscore.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/doctools.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/language_data.js"></script>
+    
+    <script type="text/javascript" src="/SAIDA_RL/assets/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="/SAIDA_RL/assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="/SAIDA_RL/assets/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="core.algorithm package" href="core.algorithm.html" />
+    <link rel="prev" title="Welcome to SAIDA_RL’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SAIDA_RL
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">core package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="core.algorithm.html">core.algorithm package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="core.common.html">core.common package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-core.callbacks">core.callbacks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-core.memories">core.memories module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-core.policies">core.policies module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-core">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SAIDA_RL</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>core package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="core-package">
+<h1>core package<a class="headerlink" href="#core-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="core.algorithm.html">core.algorithm package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.A2C">core.algorithm.A2C module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.DDPG">core.algorithm.DDPG module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.DQN">core.algorithm.DQN module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.Deep_sarsa">core.algorithm.Deep_sarsa module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.MADDPG">core.algorithm.MADDPG module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.MADQN">core.algorithm.MADQN module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.PPO">core.algorithm.PPO module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.QLearning">core.algorithm.QLearning module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm.REINFORCE">core.algorithm.REINFORCE module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.algorithm.html#module-core.algorithm">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="core.common.html">core.common package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common.agent">core.common.agent module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common.callback">core.common.callback module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common.cartpole_dqn_PER">core.common.cartpole_dqn_PER module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common.memory">core.common.memory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common.policy">core.common.policy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common.processor">core.common.processor module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common.random">core.common.random module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common.util">core.common.util module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.common.html#module-core.common">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-core.callbacks">
+<span id="core-callbacks-module"></span><h2>core.callbacks module<a class="headerlink" href="#module-core.callbacks" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.callbacks.DrawTrainMovingAvgPlotCallback">
+<em class="property">class </em><code class="descclassname">core.callbacks.</code><code class="descname">DrawTrainMovingAvgPlotCallback</code><span class="sig-paren">(</span><em>file_path, plot_interval=10000, time_window=1000, l_label=['reward', 'kill_cnts', 'hps'], save_raw_data=False, title=''</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.DrawTrainMovingAvgPlotCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.callback.Callback" title="core.common.callback.Callback"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.callback.Callback</span></code></a></p>
+<dl class="method">
+<dt id="core.callbacks.DrawTrainMovingAvgPlotCallback.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.DrawTrainMovingAvgPlotCallback.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>episode</strong> – episode index</li>
+<li><strong>logs</strong> – logs is map containing value with its key which is also used as label.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.callbacks.DrawTrainPlotCallback">
+<em class="property">class </em><code class="descclassname">core.callbacks.</code><code class="descname">DrawTrainPlotCallback</code><span class="sig-paren">(</span><em>file_path=None, plot_interval=10000, data_for_plot=['episode_reward', 'nb_episode_steps']</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.DrawTrainPlotCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.callback.Callback" title="core.common.callback.Callback"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.callback.Callback</span></code></a></p>
+<dl class="method">
+<dt id="core.callbacks.DrawTrainPlotCallback.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.DrawTrainPlotCallback.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each episode</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.callbacks.FileLogger">
+<em class="property">class </em><code class="descclassname">core.callbacks.</code><code class="descname">FileLogger</code><span class="sig-paren">(</span><em>filepath</em>, <em>interval=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.FileLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.callback.Callback" title="core.common.callback.Callback"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.callback.Callback</span></code></a></p>
+<dl class="method">
+<dt id="core.callbacks.FileLogger.on_episode_begin">
+<code class="descname">on_episode_begin</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.FileLogger.on_episode_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize metrics at the beginning of each episode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.FileLogger.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.FileLogger.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute and print metrics at the end of each episode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.FileLogger.on_step_end">
+<code class="descname">on_step_end</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.FileLogger.on_step_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append metric at the end of each step</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.FileLogger.on_train_begin">
+<code class="descname">on_train_begin</code><span class="sig-paren">(</span><em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.FileLogger.on_train_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize model metrics before training</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.FileLogger.on_train_end">
+<code class="descname">on_train_end</code><span class="sig-paren">(</span><em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.FileLogger.on_train_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save model at the end of training</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.FileLogger.save_data">
+<code class="descname">save_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.FileLogger.save_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save metrics in a json file</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.callbacks.History">
+<em class="property">class </em><code class="descclassname">core.callbacks.</code><code class="descname">History</code><span class="sig-paren">(</span><em>agent=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.History" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.callback.Callback" title="core.common.callback.Callback"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.callback.Callback</span></code></a></p>
+<p>Callback that records events into a <cite>History</cite> object.</p>
+<p>This callback is automatically applied to every Keras model. The <cite>History</cite> object
+gets returned by the <cite>fit</cite> method of models.</p>
+<dl class="method">
+<dt id="core.callbacks.History.on_epoch_end">
+<code class="descname">on_epoch_end</code><span class="sig-paren">(</span><em>epoch</em>, <em>logs=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.History.on_epoch_end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.History.on_train_begin">
+<code class="descname">on_train_begin</code><span class="sig-paren">(</span><em>logs=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.History.on_train_begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.callbacks.ModelIntervalCheckpoint">
+<em class="property">class </em><code class="descclassname">core.callbacks.</code><code class="descname">ModelIntervalCheckpoint</code><span class="sig-paren">(</span><em>filepath</em>, <em>step_interval=None</em>, <em>episode_interval=None</em>, <em>condition=None</em>, <em>condition_count=0</em>, <em>verbose=0</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.ModelIntervalCheckpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.callback.Callback" title="core.common.callback.Callback"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.callback.Callback</span></code></a></p>
+<dl class="method">
+<dt id="core.callbacks.ModelIntervalCheckpoint.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.ModelIntervalCheckpoint.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each episode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.ModelIntervalCheckpoint.on_step_end">
+<code class="descname">on_step_end</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.ModelIntervalCheckpoint.on_step_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each step</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.callbacks.TestLogger">
+<em class="property">class </em><code class="descclassname">core.callbacks.</code><code class="descname">TestLogger</code><span class="sig-paren">(</span><em>agent=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TestLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.callback.Callback" title="core.common.callback.Callback"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.callback.Callback</span></code></a></p>
+<p>Logger Class for Test</p>
+<dl class="method">
+<dt id="core.callbacks.TestLogger.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TestLogger.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print logs at end of each episode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TestLogger.on_train_begin">
+<code class="descname">on_train_begin</code><span class="sig-paren">(</span><em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TestLogger.on_train_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print logs at beginning of training</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.callbacks.TrainEpisodeLogger">
+<em class="property">class </em><code class="descclassname">core.callbacks.</code><code class="descname">TrainEpisodeLogger</code><a class="headerlink" href="#core.callbacks.TrainEpisodeLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.callback.Callback" title="core.common.callback.Callback"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.callback.Callback</span></code></a></p>
+<dl class="method">
+<dt id="core.callbacks.TrainEpisodeLogger.on_episode_begin">
+<code class="descname">on_episode_begin</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainEpisodeLogger.on_episode_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset environment variables at beginning of each episode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainEpisodeLogger.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainEpisodeLogger.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute and print training statistics of the episode when done</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainEpisodeLogger.on_step_end">
+<code class="descname">on_step_end</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainEpisodeLogger.on_step_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update statistics of episode after each step</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainEpisodeLogger.on_train_begin">
+<code class="descname">on_train_begin</code><span class="sig-paren">(</span><em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainEpisodeLogger.on_train_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print training values at beginning of training</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainEpisodeLogger.on_train_end">
+<code class="descname">on_train_end</code><span class="sig-paren">(</span><em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainEpisodeLogger.on_train_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print training time at end of training</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.callbacks.TrainIntervalLogger">
+<em class="property">class </em><code class="descclassname">core.callbacks.</code><code class="descname">TrainIntervalLogger</code><span class="sig-paren">(</span><em>interval=10000</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainIntervalLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.callback.Callback" title="core.common.callback.Callback"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.callback.Callback</span></code></a></p>
+<dl class="method">
+<dt id="core.callbacks.TrainIntervalLogger.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainIntervalLogger.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update reward value at the end of each episode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainIntervalLogger.on_step_begin">
+<code class="descname">on_step_begin</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainIntervalLogger.on_step_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print metrics if interval is over</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainIntervalLogger.on_step_end">
+<code class="descname">on_step_end</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainIntervalLogger.on_step_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update progression bar at the end of each step</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainIntervalLogger.on_train_begin">
+<code class="descname">on_train_begin</code><span class="sig-paren">(</span><em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainIntervalLogger.on_train_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize training statistics at beginning of training</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainIntervalLogger.on_train_end">
+<code class="descname">on_train_end</code><span class="sig-paren">(</span><em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainIntervalLogger.on_train_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print training duration at end of training</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.callbacks.TrainIntervalLogger.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.callbacks.TrainIntervalLogger.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset statistics</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.memories">
+<span id="core-memories-module"></span><h2>core.memories module<a class="headerlink" href="#module-core.memories" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.memories.MinSegmentTree">
+<em class="property">class </em><code class="descclassname">core.memories.</code><code class="descname">MinSegmentTree</code><span class="sig-paren">(</span><em>capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.MinSegmentTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.memories.SegmentTree" title="core.memories.SegmentTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.memories.SegmentTree</span></code></a></p>
+<dl class="method">
+<dt id="core.memories.MinSegmentTree.min">
+<code class="descname">min</code><span class="sig-paren">(</span><em>start=0</em>, <em>end=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.MinSegmentTree.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns min(arr[start], …,  arr[end])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.memories.SegmentTree">
+<em class="property">class </em><code class="descclassname">core.memories.</code><code class="descname">SegmentTree</code><span class="sig-paren">(</span><em>capacity</em>, <em>operation</em>, <em>neutral_element</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SegmentTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.memories.SegmentTree.reduce">
+<code class="descname">reduce</code><span class="sig-paren">(</span><em>start=0</em>, <em>end=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SegmentTree.reduce" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns result of applying <cite>self.operation</cite>
+to a contiguous subsequence of the array.</p>
+<blockquote>
+<div>self.operation(arr[start], operation(arr[start+1], operation(… arr[end])))</div></blockquote>
+<dl class="docutils">
+<dt>start: int</dt>
+<dd>beginning of the subsequence</dd>
+<dt>end: int</dt>
+<dd>end of the subsequences</dd>
+</dl>
+<dl class="docutils">
+<dt>reduced: obj</dt>
+<dd>result of reducing self.operation over the specified range of array elements.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.memories.SequentialMemory">
+<em class="property">class </em><code class="descclassname">core.memories.</code><code class="descname">SequentialMemory</code><span class="sig-paren">(</span><em>limit</em>, <em>enable_per=False</em>, <em>per_alpha=0.6</em>, <em>per_beta=0.4</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SequentialMemory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.memory.Memory" title="core.common.memory.Memory"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.memory.Memory</span></code></a></p>
+<dl class="method">
+<dt id="core.memories.SequentialMemory.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>observation</em>, <em>action</em>, <em>reward</em>, <em>terminal</em>, <em>training=True</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SequentialMemory.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append an observation to the memory</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>observation (dict): Observation returned by environment
+action (int): Action taken to obtain this observation
+reward (float): Reward obtained by taking this action
+terminal (boolean): Is the state terminal</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.memories.SequentialMemory.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SequentialMemory.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configurations of SequentialMemory</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Dict of config</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.memories.SequentialMemory.nb_entries">
+<code class="descname">nb_entries</code><a class="headerlink" href="#core.memories.SequentialMemory.nb_entries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return number of observations</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Number of observations</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.memories.SequentialMemory.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>batch_size</em>, <em>batch_idxs=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SequentialMemory.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a randomized batch of experiences</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>batch_size (int): Size of the all batch
+batch_idxs (int): Indexes to extract
+per_beta (float): Prioritized Experience Replay Memory Hyper parameter, To what degree to use importance weights(0 - no corrections, 1 - full correction)</dd>
+<dt># Returns</dt>
+<dd>A list of experiences randomly selected</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.memories.SequentialMemory.update_priorities">
+<code class="descname">update_priorities</code><span class="sig-paren">(</span><em>idxes</em>, <em>priorities</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SequentialMemory.update_priorities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update priorities of sampled transitions.
+sets priority of transition at index idxes[i] in buffer
+to priorities[i].
+Parameters
+———-
+idxes: [int]</p>
+<blockquote>
+<div>List of idxes of sampled transitions</div></blockquote>
+<dl class="docutils">
+<dt>priorities: [float]</dt>
+<dd>List of updated priorities corresponding to
+transitions at the sampled idxes denoted by
+variable <cite>idxes</cite>.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.memories.SumSegmentTree">
+<em class="property">class </em><code class="descclassname">core.memories.</code><code class="descname">SumSegmentTree</code><span class="sig-paren">(</span><em>capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SumSegmentTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.memories.SegmentTree" title="core.memories.SegmentTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.memories.SegmentTree</span></code></a></p>
+<dl class="method">
+<dt id="core.memories.SumSegmentTree.find_prefixsum_idx">
+<code class="descname">find_prefixsum_idx</code><span class="sig-paren">(</span><em>prefixsum</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SumSegmentTree.find_prefixsum_idx" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Find the highest index <cite>i</cite> in the array such that</dt>
+<dd>sum(arr[0] + arr[1] + … + arr[i - i]) &lt;= prefixsum</dd>
+</dl>
+<p>if array values are probabilities, this function
+allows to sample indexes according to the discrete
+probability efficiently.
+Parameters
+———-
+perfixsum: float</p>
+<blockquote>
+<div>upperbound on the sum of array prefix</div></blockquote>
+<dl class="docutils">
+<dt>idx: int</dt>
+<dd>highest index satisfying the prefixsum constraint</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.memories.SumSegmentTree.sum">
+<code class="descname">sum</code><span class="sig-paren">(</span><em>start=0</em>, <em>end=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.memories.SumSegmentTree.sum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns arr[start] + … + arr[end]</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.policies">
+<span id="core-policies-module"></span><h2>core.policies module<a class="headerlink" href="#module-core.policies" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.policies.AdvEpsGreedyPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">AdvEpsGreedyPolicy</code><span class="sig-paren">(</span><em>max_score</em>, <em>min_score=0</em>, <em>score_queue_size=100</em>, <em>score_name='episode_reward'</em>, <em>score_type='mean'</em>, <em>str_eps=1</em>, <em>nb_agents=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.AdvEpsGreedyPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.policies.LinearAnnealedPolicy" title="core.policies.LinearAnnealedPolicy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.policies.LinearAnnealedPolicy</span></code></a></p>
+<p>Implement the AdvEpsGreedyPolicy</p>
+<p>Eps Greedy policy either:</p>
+<ul class="simple">
+<li>takes a random action with probability epsilon</li>
+<li>takes current best action with prob (1 - epsilon)</li>
+</ul>
+<p>epsilon is calculated by:
+- max(epsilon greedy value, score based value)</p>
+<dl class="method">
+<dt id="core.policies.AdvEpsGreedyPolicy.get_current_value">
+<code class="descname">get_current_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.AdvEpsGreedyPolicy.get_current_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return current annealing value</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Value to use in annealing</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.AdvEpsGreedyPolicy.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.AdvEpsGreedyPolicy.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.BoltzmannGumbelQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">BoltzmannGumbelQPolicy</code><span class="sig-paren">(</span><em>C=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.BoltzmannGumbelQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>Implements Boltzmann-Gumbel exploration (BGE) adapted for Q learning
+based on the paper Boltzmann Exploration Done Right
+(<a class="reference external" href="https://arxiv.org/pdf/1705.10257.pdf">https://arxiv.org/pdf/1705.10257.pdf</a>).</p>
+<p>BGE is invariant with respect to the mean of the rewards but not their
+variance. The parameter C, which defaults to 1, can be used to correct for
+this, and should be set to the least upper bound on the standard deviation
+of the rewards.</p>
+<p>BGE is only available for training, not testing. For testing purposes, you
+can achieve approximately the same result as BGE after training for N steps
+on K actions with parameter C by using the BoltzmannQPolicy and setting
+tau = C/sqrt(N/K).</p>
+<dl class="method">
+<dt id="core.policies.BoltzmannGumbelQPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.BoltzmannGumbelQPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configurations of BoltzmannGumbelQPolicy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Dict of config</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.BoltzmannGumbelQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.BoltzmannGumbelQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the selected action</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>q_values (np.ndarray): List of the estimations of Q for each action</dd>
+<dt># Returns</dt>
+<dd>Selection action</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.BoltzmannQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">BoltzmannQPolicy</code><span class="sig-paren">(</span><em>tau=1.0</em>, <em>clip=(-500.0</em>, <em>500.0)</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.BoltzmannQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>Implement the Boltzmann Q Policy</p>
+<p>Boltzmann Q Policy builds a probability law on q values and returns
+an action selected randomly according to this law.</p>
+<dl class="method">
+<dt id="core.policies.BoltzmannQPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.BoltzmannQPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configurations of BoltzmannQPolicy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Dict of config</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.BoltzmannQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.BoltzmannQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the selected action</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>q_values (np.ndarray): List of the estimations of Q for each action</dd>
+<dt># Returns</dt>
+<dd>Selection action</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.EpsGreedyQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">EpsGreedyQPolicy</code><span class="sig-paren">(</span><em>eps=0.1</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.EpsGreedyQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>Implement the epsilon greedy policy</p>
+<p>Eps Greedy policy either:</p>
+<ul class="simple">
+<li>takes a random action with probability epsilon</li>
+<li>takes current best action with prob (1 - epsilon)</li>
+</ul>
+<dl class="method">
+<dt id="core.policies.EpsGreedyQPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.EpsGreedyQPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configurations of EpsGreedyQPolicy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Dict of config</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.EpsGreedyQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.EpsGreedyQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the selected action</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>q_values (np.ndarray): List of the estimations of Q for each action</dd>
+<dt># Returns</dt>
+<dd>Selection action</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.GreedyQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">GreedyQPolicy</code><a class="headerlink" href="#core.policies.GreedyQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>Implement the greedy policy</p>
+<p>Greedy policy returns the current best action according to q_values</p>
+<dl class="method">
+<dt id="core.policies.GreedyQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.GreedyQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the selected action</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>q_values (np.ndarray): List of the estimations of Q for each action</dd>
+<dt># Returns</dt>
+<dd>Selection action</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.LinearAnnealedPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">LinearAnnealedPolicy</code><span class="sig-paren">(</span><em>inner_policy</em>, <em>attr</em>, <em>value_max</em>, <em>value_min</em>, <em>value_test</em>, <em>nb_steps</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.LinearAnnealedPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>Implement the linear annealing policy</p>
+<p>Linear Annealing Policy computes a current threshold value and
+transfers it to an inner policy which chooses the action. The threshold
+value is following a linear function decreasing over time.</p>
+<dl class="method">
+<dt id="core.policies.LinearAnnealedPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.LinearAnnealedPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configurations of LinearAnnealedPolicy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Dict of config</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.LinearAnnealedPolicy.get_current_value">
+<code class="descname">get_current_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.LinearAnnealedPolicy.get_current_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return current annealing value</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Value to use in annealing</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.policies.LinearAnnealedPolicy.metrics">
+<code class="descname">metrics</code><a class="headerlink" href="#core.policies.LinearAnnealedPolicy.metrics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return metrics values</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>List of metric values</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.policies.LinearAnnealedPolicy.metrics_names">
+<code class="descname">metrics_names</code><a class="headerlink" href="#core.policies.LinearAnnealedPolicy.metrics_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return names of metrics</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>List of metric names</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.LinearAnnealedPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.LinearAnnealedPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Choose an action to perform</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Action to take (int)</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.MA_BoltzmannQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">MA_BoltzmannQPolicy</code><span class="sig-paren">(</span><em>tau=1.0</em>, <em>clip=(-500.0</em>, <em>500.0)</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_BoltzmannQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<dl class="method">
+<dt id="core.policies.MA_BoltzmannQPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_BoltzmannQPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configuration of the policy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Configuration as dict</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.MA_BoltzmannQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_BoltzmannQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.policies.MA_BoltzmannQPolicy.select_action_agent">
+<code class="descname">select_action_agent</code><span class="sig-paren">(</span><em>q_value</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_BoltzmannQPolicy.select_action_agent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.MA_EpsGreedyQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">MA_EpsGreedyQPolicy</code><span class="sig-paren">(</span><em>eps=0.1</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_EpsGreedyQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<dl class="method">
+<dt id="core.policies.MA_EpsGreedyQPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_EpsGreedyQPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configuration of the policy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Configuration as dict</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.MA_EpsGreedyQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_EpsGreedyQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.MA_GreedyQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">MA_GreedyQPolicy</code><a class="headerlink" href="#core.policies.MA_GreedyQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<dl class="method">
+<dt id="core.policies.MA_GreedyQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_GreedyQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.MA_MaxBoltzmannQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">MA_MaxBoltzmannQPolicy</code><span class="sig-paren">(</span><em>eps=0.1</em>, <em>tau=1.0</em>, <em>clip=(-500.0</em>, <em>500.0)</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_MaxBoltzmannQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>A combination of the eps-greedy and Boltzman q-policy.</p>
+<p>Wiering, M.: Explorations in Efficient Reinforcement Learning.
+PhD thesis, University of Amserdam, Amsterdam (1999)</p>
+<p><a class="reference external" href="https://pure.uva.nl/ws/files/3153478/8461_UBA003000033.pdf">https://pure.uva.nl/ws/files/3153478/8461_UBA003000033.pdf</a></p>
+<dl class="method">
+<dt id="core.policies.MA_MaxBoltzmannQPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_MaxBoltzmannQPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configuration of the policy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Configuration as dict</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.MA_MaxBoltzmannQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_MaxBoltzmannQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.policies.MA_MaxBoltzmannQPolicy.select_action_agent">
+<code class="descname">select_action_agent</code><span class="sig-paren">(</span><em>q_value</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MA_MaxBoltzmannQPolicy.select_action_agent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.MaxBoltzmannQPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">MaxBoltzmannQPolicy</code><span class="sig-paren">(</span><em>eps=0.1</em>, <em>tau=1.0</em>, <em>clip=(-500.0</em>, <em>500.0)</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MaxBoltzmannQPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>A combination of the eps-greedy and Boltzman q-policy.</p>
+<p>Wiering, M.: Explorations in Efficient Reinforcement Learning.
+PhD thesis, University of Amsterdam, Amsterdam (1999)</p>
+<p><a class="reference external" href="https://pure.uva.nl/ws/files/3153478/8461_UBA003000033.pdf">https://pure.uva.nl/ws/files/3153478/8461_UBA003000033.pdf</a></p>
+<dl class="method">
+<dt id="core.policies.MaxBoltzmannQPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MaxBoltzmannQPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configurations of MaxBoltzmannQPolicy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Dict of config</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.MaxBoltzmannQPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.MaxBoltzmannQPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the selected action
+The selected action follows the BoltzmannQPolicy with probability epsilon
+or return the Greedy Policy with probability (1 - epsilon)</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>q_values (np.ndarray): List of the estimations of Q for each action</dd>
+<dt># Returns</dt>
+<dd>Selection action</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.NoisePolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">NoisePolicy</code><span class="sig-paren">(</span><em>random_process</em>, <em>ratio_of_pure_action=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.NoisePolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>Implement policy based on OrnsteinUhlenbeck Process
+This policy returns action added by noise for exploration in ddpg</p>
+<dl class="method">
+<dt id="core.policies.NoisePolicy.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.NoisePolicy.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.policies.NoisePolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>pure_action</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.NoisePolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the selected action</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>random_process : Random process</dd>
+<dt># Returns</dt>
+<dd>Selection action</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.policies.starcraft_multiagent_eGreedyPolicy">
+<em class="property">class </em><code class="descclassname">core.policies.</code><code class="descname">starcraft_multiagent_eGreedyPolicy</code><span class="sig-paren">(</span><em>nb_agents</em>, <em>nb_actions</em>, <em>eps=0.1</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.starcraft_multiagent_eGreedyPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.policy.Policy" title="core.common.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.policy.Policy</span></code></a></p>
+<p>Implement the epsilon greedy policy</p>
+<p>Eps Greedy policy either:</p>
+<ul class="simple">
+<li>takes a random action with probability epsilon</li>
+<li>takes current best action with prob (1 - epsilon)</li>
+</ul>
+<p>nb_actions = (64*64, 3)</p>
+<dl class="method">
+<dt id="core.policies.starcraft_multiagent_eGreedyPolicy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.starcraft_multiagent_eGreedyPolicy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configurations of EpsGreedyPolicy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Dict of config</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.policies.starcraft_multiagent_eGreedyPolicy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>q_values</em><span class="sig-paren">)</span><a class="headerlink" href="#core.policies.starcraft_multiagent_eGreedyPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the selected action</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>q_values (list): [action_xy (np.array), action_type (np.array)]
+[(1, nb_agents, actions), (1, nb_agents, actions)]</dd>
+<dt># Returns</dt>
+<dd>Selection action: [(x,y), nothing/attack/move]
+[(nb_agents, 1), (nb_agents, 1)]</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-core" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="core.algorithm.html" class="btn btn-neutral float-right" title="core.algorithm package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to SAIDA_RL’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, SAIDA
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

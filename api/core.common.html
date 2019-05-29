@@ -1,0 +1,1610 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>core.common package &mdash; SAIDA_RL  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="/SAIDA_RL/assets/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="/SAIDA_RL/assets/documentation_options.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/jquery.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/underscore.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/doctools.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/language_data.js"></script>
+    
+    <script type="text/javascript" src="/SAIDA_RL/assets/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="/SAIDA_RL/assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="/SAIDA_RL/assets/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="core.algorithm package" href="core.algorithm.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SAIDA_RL
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="core.html">core package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="core.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="core.algorithm.html">core.algorithm package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">core.common package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common.agent">core.common.agent module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common.callback">core.common.callback module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common.cartpole_dqn_PER">core.common.cartpole_dqn_PER module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common.memory">core.common.memory module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common.policy">core.common.policy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common.processor">core.common.processor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common.random">core.common.random module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common.util">core.common.util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.common">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#module-core.callbacks">core.callbacks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#module-core.memories">core.memories module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#module-core.policies">core.policies module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#module-core">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SAIDA_RL</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="core.html">core package</a> &raquo;</li>
+        
+      <li>core.common package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="core-common-package">
+<h1>core.common package<a class="headerlink" href="#core-common-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-core.common.agent">
+<span id="core-common-agent-module"></span><h2>core.common.agent module<a class="headerlink" href="#module-core.common.agent" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.common.agent.Agent">
+<em class="property">class </em><code class="descclassname">core.common.agent.</code><code class="descname">Agent</code><span class="sig-paren">(</span><em>processor=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract base class for all implemented agents.</p>
+<p>Each agent interacts with the environment (as defined by the <cite>Env</cite> class) by first observing the
+state of the environment. Based on this observation the agent changes the environment by performing
+an action.</p>
+<p>Do not use this abstract base class directly but instead use one of the concrete agents implemented.
+Each agent realizes a reinforcement learning algorithm. Since all agents conform to the same
+interface, you can use them interchangeably.</p>
+<p>To implement your own agent, you have to implement the following methods:</p>
+<ul class="simple">
+<li><cite>forward</cite></li>
+<li><cite>backward</cite></li>
+<li><cite>compile</cite></li>
+<li><cite>load_weights</cite></li>
+<li><cite>save_weights</cite></li>
+</ul>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>processor (<cite>Processor</cite> instance): See [Processor](#processor) for details.</dd>
+</dl>
+<dl class="method">
+<dt id="core.common.agent.Agent.append_replay_memory">
+<code class="descname">append_replay_memory</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent.append_replay_memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>save sates to replay buffer after having executed the action returned by <cite>forward</cite>.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>reward (float): The observed reward after executing the action returned by <cite>forward</cite>.
+terminal (boolean): <cite>True</cite> if the new state of the environment is terminal.</dd>
+<dt># Returns</dt>
+<dd>List of metrics values</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.agent.Agent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the agent after having executed the action returned by <cite>forward</cite>.
+If the policy is implemented by a neural network, this corresponds to a weight update using back-prop.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>reward (float): The observed reward after executing the action returned by <cite>forward</cite>.
+terminal (boolean): <cite>True</cite> if the new state of the environment is terminal.</dd>
+<dt># Returns</dt>
+<dd>List of metrics values</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.agent.Agent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compiles an agent and the underlaying models to be used for training and testing.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>optimizer (<cite>keras.optimizers.Optimizer</cite> instance): The optimizer to be used during training.
+metrics (list of functions <cite>lambda y_true, y_pred: metric</cite>): The metrics to run during training.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.agent.Agent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the an observation from the environment and returns the action to be taken next.
+If the policy is implemented by a neural network, this corresponds to a forward (inference) pass.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>observation (object): The current observation from the environment.</dd>
+<dt># Returns</dt>
+<dd>The next action to be executed in the environment.</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.agent.Agent.layers">
+<code class="descname">layers</code><a class="headerlink" href="#core.common.agent.Agent.layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all layers of the underlying model(s).</p>
+<p>If the concrete implementation uses multiple internal models,
+this method returns them in a concatenated list.</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>A list of the model’s layers</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.agent.Agent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the weights of an agent from an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str or list): The path to the HDF5 files. In case of algorithms using multiple models, it could be list of path of models.
+filename (str or list): The name to the HDF5 files. In case of algorithms using multiple models, it could be list of name of models.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.agent.Agent.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets all internally kept states after an episode is completed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.agent.Agent.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>env</em>, <em>nb_steps</em>, <em>shared_cb_params={}</em>, <em>train_mode=True</em>, <em>action_repetition=1</em>, <em>callbacks=None</em>, <em>verbose=1</em>, <em>visualize=False</em>, <em>nb_max_start_steps=0</em>, <em>random_policy=None</em>, <em>log_interval=10000</em>, <em>nb_max_episode_steps=None</em>, <em>nb_episodes=0</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trains the agent on the given environment.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd><p class="first">env: Environment instance that the agent interacts with.
+nb_steps (integer): Number of training steps to be performed.
+shared_cb_params (map) : Shared (key, value) parameters where it can be used in callbacks
+action_repetition (integer): Number of times the agent repeats the same action without observing the environment again.
+callbacks (list of <cite>keras.callbacks.Callback</cite> or <cite>rl.callbacks.Callback</cite> instances):</p>
+<blockquote>
+<div>List of callbacks to apply during training. See [callbacks](/callbacks) for details.</div></blockquote>
+<p>verbose (integer): 0 for no logging, 1 for interval logging (compare <cite>log_interval</cite>), 2 for episode logging
+visualize (boolean): If <cite>True</cite>, the environment is visualized during training. However,</p>
+<blockquote>
+<div>this is likely going to slow down training significantly and is thus intended to be
+a debugging instrument.</div></blockquote>
+<dl class="docutils">
+<dt>nb_max_start_steps (integer): Number of maximum steps that the agent performs at the beginning</dt>
+<dd>of each episode using <cite>start_step_policy</cite>. Notice that this is an upper limit since
+the exact number of steps to be performed is sampled uniformly from [0, max_start_steps]
+at the beginning of each episode.</dd>
+<dt>start_step_policy (<cite>lambda observation: action</cite>): The policy</dt>
+<dd>to follow if <cite>nb_max_start_steps</cite> &gt; 0. If set to <cite>None</cite>, a random action is performed.</dd>
+</dl>
+<p>log_interval (integer): If <cite>verbose</cite> = 1, the number of steps that are considered to be an interval.
+nb_max_episode_steps (integer): Number of steps per episode that the agent performs before</p>
+<blockquote class="last">
+<div>automatically resetting the environment. Set to <cite>None</cite> if each episode should run
+(potentially indefinitely) until the environment signals a terminal state.</div></blockquote>
+</dd>
+<dt># Returns</dt>
+<dd>A <cite>keras.callbacks.History</cite> instance that recorded the entire training process.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.agent.Agent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>filename=None</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.agent.Agent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the weights of an agent as an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str): The path to where the weights should be saved.
+overwrite (boolean): If <cite>False</cite> and <cite>filepath</cite> already exists, raises an error.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.common.callback">
+<span id="core-common-callback-module"></span><h2>core.common.callback module<a class="headerlink" href="#module-core.common.callback" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.common.callback.Callback">
+<em class="property">class </em><code class="descclassname">core.common.callback.</code><code class="descname">Callback</code><span class="sig-paren">(</span><em>agent=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.Callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">keras.callbacks.Callback</span></code></p>
+<dl class="method">
+<dt id="core.common.callback.Callback.on_action_begin">
+<code class="descname">on_action_begin</code><span class="sig-paren">(</span><em>action</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.Callback.on_action_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at beginning of each action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.Callback.on_action_end">
+<code class="descname">on_action_end</code><span class="sig-paren">(</span><em>action</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.Callback.on_action_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.Callback.on_episode_begin">
+<code class="descname">on_episode_begin</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.Callback.on_episode_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at beginning of each episode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.Callback.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.Callback.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each episode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.Callback.on_step_begin">
+<code class="descname">on_step_begin</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.Callback.on_step_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at beginning of each step</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.Callback.on_step_end">
+<code class="descname">on_step_end</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.Callback.on_step_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each step</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.callback.CallbackList">
+<em class="property">class </em><code class="descclassname">core.common.callback.</code><code class="descname">CallbackList</code><span class="sig-paren">(</span><em>callbacks=None</em>, <em>queue_length=10</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.CallbackList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">keras.callbacks.CallbackList</span></code></p>
+<dl class="method">
+<dt id="core.common.callback.CallbackList.on_action_begin">
+<code class="descname">on_action_begin</code><span class="sig-paren">(</span><em>action</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.CallbackList.on_action_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at beginning of each action for each callback in callbackList</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.CallbackList.on_action_end">
+<code class="descname">on_action_end</code><span class="sig-paren">(</span><em>action</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.CallbackList.on_action_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each action for each callback in callbackList</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.CallbackList.on_episode_begin">
+<code class="descname">on_episode_begin</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.CallbackList.on_episode_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at beginning of each episode for each callback in callbackList</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.CallbackList.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.CallbackList.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each episode for each callback in callbackList</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.CallbackList.on_step_begin">
+<code class="descname">on_step_begin</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.CallbackList.on_step_begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at beginning of each step for each callback in callbackList</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.callback.CallbackList.on_step_end">
+<code class="descname">on_step_end</code><span class="sig-paren">(</span><em>step</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.callback.CallbackList.on_step_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at end of each step for each callback in callbackList</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.common.cartpole_dqn_PER">
+<span id="core-common-cartpole-dqn-per-module"></span><h2>core.common.cartpole_dqn_PER module<a class="headerlink" href="#module-core.common.cartpole_dqn_PER" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.common.cartpole_dqn_PER.DQNAgent">
+<em class="property">class </em><code class="descclassname">core.common.cartpole_dqn_PER.</code><code class="descname">DQNAgent</code><span class="sig-paren">(</span><em>state_size</em>, <em>action_size</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.DQNAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.DQNAgent.append_sample">
+<code class="descname">append_sample</code><span class="sig-paren">(</span><em>state</em>, <em>action</em>, <em>reward</em>, <em>next_state</em>, <em>done</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.DQNAgent.append_sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.DQNAgent.build_model">
+<code class="descname">build_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.DQNAgent.build_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.DQNAgent.get_action">
+<code class="descname">get_action</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.DQNAgent.get_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.DQNAgent.optimizer">
+<code class="descname">optimizer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.DQNAgent.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.DQNAgent.train_model">
+<code class="descname">train_model</code><span class="sig-paren">(</span><em>beta</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.DQNAgent.train_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.DQNAgent.update_target_model">
+<code class="descname">update_target_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.DQNAgent.update_target_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.cartpole_dqn_PER.MinSegmentTree">
+<em class="property">class </em><code class="descclassname">core.common.cartpole_dqn_PER.</code><code class="descname">MinSegmentTree</code><span class="sig-paren">(</span><em>capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.MinSegmentTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.common.cartpole_dqn_PER.SegmentTree" title="core.common.cartpole_dqn_PER.SegmentTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.cartpole_dqn_PER.SegmentTree</span></code></a></p>
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.MinSegmentTree.min">
+<code class="descname">min</code><span class="sig-paren">(</span><em>start=0</em>, <em>end=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.MinSegmentTree.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns min(arr[start], …,  arr[end])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.cartpole_dqn_PER.PrioritizedReplayBuffer">
+<em class="property">class </em><code class="descclassname">core.common.cartpole_dqn_PER.</code><code class="descname">PrioritizedReplayBuffer</code><span class="sig-paren">(</span><em>size</em>, <em>alpha</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.PrioritizedReplayBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.common.cartpole_dqn_PER.ReplayBuffer" title="core.common.cartpole_dqn_PER.ReplayBuffer"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.cartpole_dqn_PER.ReplayBuffer</span></code></a></p>
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.PrioritizedReplayBuffer.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.PrioritizedReplayBuffer.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>See ReplayBuffer.store_effect</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.PrioritizedReplayBuffer.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>batch_size</em>, <em>beta</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.PrioritizedReplayBuffer.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample a batch of experiences.
+compared to ReplayBuffer.sample
+it also returns importance weights and idxes
+of sampled experiences.
+Parameters
+———-
+batch_size: int</p>
+<blockquote>
+<div>How many transitions to sample.</div></blockquote>
+<dl class="docutils">
+<dt>beta: float</dt>
+<dd>To what degree to use importance weights
+(0 - no corrections, 1 - full correction)</dd>
+</dl>
+<dl class="docutils">
+<dt>obs_batch: np.array</dt>
+<dd>batch of observations</dd>
+<dt>act_batch: np.array</dt>
+<dd>batch of actions executed given obs_batch</dd>
+<dt>rew_batch: np.array</dt>
+<dd>rewards received as results of executing act_batch</dd>
+<dt>next_obs_batch: np.array</dt>
+<dd>next set of observations seen after executing act_batch</dd>
+<dt>done_mask: np.array</dt>
+<dd>done_mask[i] = 1 if executing act_batch[i] resulted in
+the end of an episode and 0 otherwise.</dd>
+<dt>weights: np.array</dt>
+<dd>Array of shape (batch_size,) and dtype np.float32
+denoting importance weight of each sampled transition</dd>
+<dt>idxes: np.array</dt>
+<dd>Array of shape (batch_size,) and dtype np.int32
+idexes in buffer of sampled experiences</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.PrioritizedReplayBuffer.update_priorities">
+<code class="descname">update_priorities</code><span class="sig-paren">(</span><em>idxes</em>, <em>priorities</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.PrioritizedReplayBuffer.update_priorities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update priorities of sampled transitions.
+sets priority of transition at index idxes[i] in buffer
+to priorities[i].
+Parameters
+———-
+idxes: [int]</p>
+<blockquote>
+<div>List of idxes of sampled transitions</div></blockquote>
+<dl class="docutils">
+<dt>priorities: [float]</dt>
+<dd>List of updated priorities corresponding to
+transitions at the sampled idxes denoted by
+variable <cite>idxes</cite>.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.cartpole_dqn_PER.ReplayBuffer">
+<em class="property">class </em><code class="descclassname">core.common.cartpole_dqn_PER.</code><code class="descname">ReplayBuffer</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.ReplayBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.ReplayBuffer.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>obs_t</em>, <em>action</em>, <em>reward</em>, <em>obs_tp1</em>, <em>done</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.ReplayBuffer.add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.ReplayBuffer.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>batch_size</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.ReplayBuffer.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample a batch of experiences.
+Parameters
+———-
+batch_size: int</p>
+<blockquote>
+<div>How many transitions to sample.</div></blockquote>
+<dl class="docutils">
+<dt>obs_batch: np.array</dt>
+<dd>batch of observations</dd>
+<dt>act_batch: np.array</dt>
+<dd>batch of actions executed given obs_batch</dd>
+<dt>rew_batch: np.array</dt>
+<dd>rewards received as results of executing act_batch</dd>
+<dt>next_obs_batch: np.array</dt>
+<dd>next set of observations seen after executing act_batch</dd>
+<dt>done_mask: np.array</dt>
+<dd>done_mask[i] = 1 if executing act_batch[i] resulted in
+the end of an episode and 0 otherwise.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.cartpole_dqn_PER.SegmentTree">
+<em class="property">class </em><code class="descclassname">core.common.cartpole_dqn_PER.</code><code class="descname">SegmentTree</code><span class="sig-paren">(</span><em>capacity</em>, <em>operation</em>, <em>neutral_element</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.SegmentTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.SegmentTree.reduce">
+<code class="descname">reduce</code><span class="sig-paren">(</span><em>start=0</em>, <em>end=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.SegmentTree.reduce" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns result of applying <cite>self.operation</cite>
+to a contiguous subsequence of the array.</p>
+<blockquote>
+<div>self.operation(arr[start], operation(arr[start+1], operation(… arr[end])))</div></blockquote>
+<dl class="docutils">
+<dt>start: int</dt>
+<dd>beginning of the subsequence</dd>
+<dt>end: int</dt>
+<dd>end of the subsequences</dd>
+</dl>
+<dl class="docutils">
+<dt>reduced: obj</dt>
+<dd>result of reducing self.operation over the specified range of array elements.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.cartpole_dqn_PER.SumSegmentTree">
+<em class="property">class </em><code class="descclassname">core.common.cartpole_dqn_PER.</code><code class="descname">SumSegmentTree</code><span class="sig-paren">(</span><em>capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.SumSegmentTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.common.cartpole_dqn_PER.SegmentTree" title="core.common.cartpole_dqn_PER.SegmentTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.cartpole_dqn_PER.SegmentTree</span></code></a></p>
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.SumSegmentTree.find_prefixsum_idx">
+<code class="descname">find_prefixsum_idx</code><span class="sig-paren">(</span><em>prefixsum</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.SumSegmentTree.find_prefixsum_idx" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Find the highest index <cite>i</cite> in the array such that</dt>
+<dd>sum(arr[0] + arr[1] + … + arr[i - i]) &lt;= prefixsum</dd>
+</dl>
+<p>if array values are probabilities, this function
+allows to sample indexes according to the discrete
+probability efficiently.
+Parameters
+———-
+perfixsum: float</p>
+<blockquote>
+<div>upperbound on the sum of array prefix</div></blockquote>
+<dl class="docutils">
+<dt>idx: int</dt>
+<dd>highest index satisfying the prefixsum constraint</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.cartpole_dqn_PER.SumSegmentTree.sum">
+<code class="descname">sum</code><span class="sig-paren">(</span><em>start=0</em>, <em>end=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.SumSegmentTree.sum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns arr[start] + … + arr[end]</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.cartpole_dqn_PER.load_sample">
+<code class="descclassname">core.common.cartpole_dqn_PER.</code><code class="descname">load_sample</code><span class="sig-paren">(</span><em>memory</em>, <em>file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.load_sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.cartpole_dqn_PER.save_sample">
+<code class="descclassname">core.common.cartpole_dqn_PER.</code><code class="descname">save_sample</code><span class="sig-paren">(</span><em>memory</em>, <em>file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.cartpole_dqn_PER.save_sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-core.common.memory">
+<span id="core-common-memory-module"></span><h2>core.common.memory module<a class="headerlink" href="#module-core.common.memory" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.common.memory.Experience">
+<em class="property">class </em><code class="descclassname">core.common.memory.</code><code class="descname">Experience</code><span class="sig-paren">(</span><em>state0</em>, <em>action</em>, <em>reward</em>, <em>state1</em>, <em>terminal1</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.Experience" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="attribute">
+<dt id="core.common.memory.Experience.action">
+<code class="descname">action</code><a class="headerlink" href="#core.common.memory.Experience.action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.memory.Experience.reward">
+<code class="descname">reward</code><a class="headerlink" href="#core.common.memory.Experience.reward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.memory.Experience.state0">
+<code class="descname">state0</code><a class="headerlink" href="#core.common.memory.Experience.state0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.memory.Experience.state1">
+<code class="descname">state1</code><a class="headerlink" href="#core.common.memory.Experience.state1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.memory.Experience.terminal1">
+<code class="descname">terminal1</code><a class="headerlink" href="#core.common.memory.Experience.terminal1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.memory.Memory">
+<em class="property">class </em><code class="descclassname">core.common.memory.</code><code class="descname">Memory</code><span class="sig-paren">(</span><em>window_length</em>, <em>ignore_episode_boundaries=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.Memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.common.memory.Memory.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>observation</em>, <em>action</em>, <em>reward</em>, <em>terminal</em>, <em>training=True</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.Memory.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.memory.Memory.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.Memory.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configuration (window_length, ignore_episode_boundaries) for Memory</p>
+<dl class="docutils">
+<dt># Return</dt>
+<dd>A dict with keys window_length and ignore_episode_boundaries</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.memory.Memory.get_recent_state">
+<code class="descname">get_recent_state</code><span class="sig-paren">(</span><em>current_observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.Memory.get_recent_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of last observations</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>current_observation (object): Last observation</dd>
+<dt># Returns</dt>
+<dd>A list of the last observations</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.memory.Memory.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>batch_size</em>, <em>batch_idxs=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.Memory.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.memory.RingBuffer">
+<em class="property">class </em><code class="descclassname">core.common.memory.</code><code class="descname">RingBuffer</code><span class="sig-paren">(</span><em>maxlen</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.RingBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.common.memory.RingBuffer.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.RingBuffer.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append an element to the buffer</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>v (object): Element to append</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.memory.RingBuffer.length">
+<code class="descname">length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.RingBuffer.length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the length of Deque</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>None</dd>
+<dt># Returns</dt>
+<dd>The lenght of deque element</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.memory.sample_batch_indexes">
+<code class="descclassname">core.common.memory.</code><code class="descname">sample_batch_indexes</code><span class="sig-paren">(</span><em>low</em>, <em>high</em>, <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.sample_batch_indexes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a sample of (size) unique elements between low and high</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>low (int): The minimum value for our samples
+high (int): The maximum value for our samples
+size (int): The number of samples to pick</dd>
+<dt># Returns</dt>
+<dd>A list of samples of length size, with values between low and high</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.memory.zeroed_observation">
+<code class="descclassname">core.common.memory.</code><code class="descname">zeroed_observation</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.memory.zeroed_observation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an array of zeros with same shape as given observation</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>observation (list): List of observation</dd>
+<dt># Return</dt>
+<dd>A np.ndarray of zeros with observation.shape</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.common.policy">
+<span id="core-common-policy-module"></span><h2>core.common.policy module<a class="headerlink" href="#module-core.common.policy" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.common.policy.Policy">
+<em class="property">class </em><code class="descclassname">core.common.policy.</code><code class="descname">Policy</code><a class="headerlink" href="#core.common.policy.Policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract base class for all implemented policies.</p>
+<p>Each policy helps with selection of action to take on an environment.</p>
+<p>Do not use this abstract base class directly but instead use one of the concrete policies implemented.
+To implement your own policy, you have to implement the following methods:</p>
+<ul class="simple">
+<li><cite>select_action</cite></li>
+</ul>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>agent (rl.core.Agent): Agent used</dd>
+</dl>
+<dl class="method">
+<dt id="core.common.policy.Policy.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.policy.Policy.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return configuration of the policy</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>Configuration as dict</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.policy.Policy.metrics">
+<code class="descname">metrics</code><a class="headerlink" href="#core.common.policy.Policy.metrics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.policy.Policy.metrics_names">
+<code class="descname">metrics_names</code><a class="headerlink" href="#core.common.policy.Policy.metrics_names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.policy.Policy.on_episode_end">
+<code class="descname">on_episode_end</code><span class="sig-paren">(</span><em>episode</em>, <em>logs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.policy.Policy.on_episode_end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.policy.Policy.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.policy.Policy.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.policy.Policy.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.policy.Policy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.common.processor">
+<span id="core-common-processor-module"></span><h2>core.common.processor module<a class="headerlink" href="#module-core.common.processor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.common.processor.Processor">
+<em class="property">class </em><code class="descclassname">core.common.processor.</code><code class="descname">Processor</code><a class="headerlink" href="#core.common.processor.Processor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract base class for implementing processors.</p>
+<p>A processor acts as a coupling mechanism between an <cite>Agent</cite> and its <cite>Env</cite>. This can
+be necessary if your agent has different requirements with respect to the form of the
+observations, actions, and rewards of the environment. By implementing a custom processor,
+you can effectively translate between the two without having to change the underlaying
+implementation of the agent or environment.</p>
+<p>Do not use this abstract base class directly but instead use one of the concrete implementations
+or write your own.</p>
+<dl class="attribute">
+<dt id="core.common.processor.Processor.metrics">
+<code class="descname">metrics</code><a class="headerlink" href="#core.common.processor.Processor.metrics" title="Permalink to this definition">¶</a></dt>
+<dd><p>The metrics of the processor, which will be reported during training.</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>List of <cite>lambda y_true, y_pred: metric</cite> functions.</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.processor.Processor.metrics_names">
+<code class="descname">metrics_names</code><a class="headerlink" href="#core.common.processor.Processor.metrics_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>The human-readable names of the agent’s metrics. Must return as many names as there
+are metrics (see also <cite>compile</cite>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.processor.Processor.process_action">
+<code class="descname">process_action</code><span class="sig-paren">(</span><em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.processor.Processor.process_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes an action predicted by an agent but before execution in an environment.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>action (int): Action given to the environment</dd>
+<dt>#&nbsp;Returns</dt>
+<dd>Processed action given to the environment</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.processor.Processor.process_info">
+<code class="descname">process_info</code><span class="sig-paren">(</span><em>info</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.processor.Processor.process_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes the info as obtained from the environment for use in an agent and
+returns it.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>info (dict): An info as obtained by the environment</dd>
+<dt># Returns</dt>
+<dd>Info obtained by the environment processed</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.processor.Processor.process_observation">
+<code class="descname">process_observation</code><span class="sig-paren">(</span><em>observation</em>, <em>state_size=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.processor.Processor.process_observation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes the observation as obtained from the environment for use in an agent and
+returns it.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>observation (object): An observation as obtained by the environment</dd>
+<dt># Returns</dt>
+<dd>Observation obtained by the environment processed</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.processor.Processor.process_reward">
+<code class="descname">process_reward</code><span class="sig-paren">(</span><em>reward</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.processor.Processor.process_reward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes the reward as obtained from the environment for use in an agent and
+returns it.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>reward (float): A reward as obtained by the environment</dd>
+<dt># Returns</dt>
+<dd>Reward obtained by the environment processed</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.processor.Processor.process_state_batch">
+<code class="descname">process_state_batch</code><span class="sig-paren">(</span><em>batch</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.processor.Processor.process_state_batch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes an entire batch of states and returns it.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>batch (list): List of states</dd>
+<dt># Returns</dt>
+<dd>Processed list of states</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.processor.Processor.process_step">
+<code class="descname">process_step</code><span class="sig-paren">(</span><em>observation</em>, <em>reward</em>, <em>done</em>, <em>info</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.processor.Processor.process_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes an entire step by applying the processor to the observation, reward, and info arguments.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>observation (object): An observation as obtained by the environment.
+reward (float): A reward as obtained by the environment.
+done (boolean): <cite>True</cite> if the environment is in a terminal state, <cite>False</cite> otherwise.
+info (dict): The debug info dictionary as obtained by the environment.</dd>
+<dt># Returns</dt>
+<dd>The tupel (observation, reward, done, reward) with with all elements after being processed.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.common.random">
+<span id="core-common-random-module"></span><h2>core.common.random module<a class="headerlink" href="#module-core.common.random" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.common.random.AdaptiveParamNoiseSpec">
+<em class="property">class </em><code class="descclassname">core.common.random.</code><code class="descname">AdaptiveParamNoiseSpec</code><span class="sig-paren">(</span><em>initial_stddev=0.1</em>, <em>desired_action_stddev=0.2</em>, <em>adaptation_coefficient=1.01</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.AdaptiveParamNoiseSpec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.common.random.AdaptiveParamNoiseSpec.adapt">
+<code class="descname">adapt</code><span class="sig-paren">(</span><em>distance</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.AdaptiveParamNoiseSpec.adapt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.random.AdaptiveParamNoiseSpec.get_stats">
+<code class="descname">get_stats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.AdaptiveParamNoiseSpec.get_stats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.random.AnnealedGaussianProcess">
+<em class="property">class </em><code class="descclassname">core.common.random.</code><code class="descname">AnnealedGaussianProcess</code><span class="sig-paren">(</span><em>mu</em>, <em>sigma</em>, <em>sigma_min</em>, <em>n_steps_annealing</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.AnnealedGaussianProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.common.random.RandomProcess" title="core.common.random.RandomProcess"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.random.RandomProcess</span></code></a></p>
+<dl class="attribute">
+<dt id="core.common.random.AnnealedGaussianProcess.current_sigma">
+<code class="descname">current_sigma</code><a class="headerlink" href="#core.common.random.AnnealedGaussianProcess.current_sigma" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.random.GaussianWhiteNoiseProcess">
+<em class="property">class </em><code class="descclassname">core.common.random.</code><code class="descname">GaussianWhiteNoiseProcess</code><span class="sig-paren">(</span><em>mu=0.0</em>, <em>sigma=1.0</em>, <em>sigma_min=None</em>, <em>n_steps_annealing=1000</em>, <em>size=1</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.GaussianWhiteNoiseProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.common.random.AnnealedGaussianProcess" title="core.common.random.AnnealedGaussianProcess"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.random.AnnealedGaussianProcess</span></code></a></p>
+<dl class="method">
+<dt id="core.common.random.GaussianWhiteNoiseProcess.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.GaussianWhiteNoiseProcess.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.random.OrnsteinUhlenbeckProcess">
+<em class="property">class </em><code class="descclassname">core.common.random.</code><code class="descname">OrnsteinUhlenbeckProcess</code><span class="sig-paren">(</span><em>theta</em>, <em>mu=0.0</em>, <em>sigma=1.0</em>, <em>dt=0.01</em>, <em>size=1</em>, <em>sigma_min=None</em>, <em>n_steps_annealing=1000</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.OrnsteinUhlenbeckProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.common.random.AnnealedGaussianProcess" title="core.common.random.AnnealedGaussianProcess"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.random.AnnealedGaussianProcess</span></code></a></p>
+<dl class="method">
+<dt id="core.common.random.OrnsteinUhlenbeckProcess.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.OrnsteinUhlenbeckProcess.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.random.OrnsteinUhlenbeckProcess.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.OrnsteinUhlenbeckProcess.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.random.RandomProcess">
+<em class="property">class </em><code class="descclassname">core.common.random.</code><code class="descname">RandomProcess</code><a class="headerlink" href="#core.common.random.RandomProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.common.random.RandomProcess.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.RandomProcess.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.random.SimpleOUNoise">
+<em class="property">class </em><code class="descclassname">core.common.random.</code><code class="descname">SimpleOUNoise</code><span class="sig-paren">(</span><em>size=1</em>, <em>mu=0</em>, <em>theta=0.05</em>, <em>sigma=0.25</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.SimpleOUNoise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Ornstein-Uhlenbeck process.</p>
+<dl class="method">
+<dt id="core.common.random.SimpleOUNoise.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.SimpleOUNoise.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the internal state (= noise) to mean (mu).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.random.SimpleOUNoise.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.SimpleOUNoise.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update internal state and return it as a noise sample.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.random.ddpg_distance_metric">
+<code class="descclassname">core.common.random.</code><code class="descname">ddpg_distance_metric</code><span class="sig-paren">(</span><em>actions1</em>, <em>actions2</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.random.ddpg_distance_metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute “distance” between actions taken by two policies at the same states
+Expects numpy arrays</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.common.util">
+<span id="core-common-util-module"></span><h2>core.common.util module<a class="headerlink" href="#module-core.common.util" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.common.util.AdditionalUpdatesOptimizer">
+<em class="property">class </em><code class="descclassname">core.common.util.</code><code class="descname">AdditionalUpdatesOptimizer</code><span class="sig-paren">(</span><em>optimizer</em>, <em>additional_updates</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.AdditionalUpdatesOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">keras.optimizers.Optimizer</span></code></p>
+<dl class="method">
+<dt id="core.common.util.AdditionalUpdatesOptimizer.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.AdditionalUpdatesOptimizer.get_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.common.util.AdditionalUpdatesOptimizer.get_updates">
+<code class="descname">get_updates</code><span class="sig-paren">(</span><em>params</em>, <em>loss</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.AdditionalUpdatesOptimizer.get_updates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.util.OPS">
+<em class="property">class </em><code class="descclassname">core.common.util.</code><code class="descname">OPS</code><a class="headerlink" href="#core.common.util.OPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="core.common.util.OPS.ACTION_REPETITION">
+<code class="descname">ACTION_REPETITION</code><em class="property"> = '-act-rept'</em><a class="headerlink" href="#core.common.util.OPS.ACTION_REPETITION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.BATCH_SIZE">
+<code class="descname">BATCH_SIZE</code><em class="property"> = '-batch-size'</em><a class="headerlink" href="#core.common.util.OPS.BATCH_SIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.BUFFER_SIZE">
+<code class="descname">BUFFER_SIZE</code><em class="property"> = '-buf_size'</em><a class="headerlink" href="#core.common.util.OPS.BUFFER_SIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.DISCOUNT_FACTOR">
+<code class="descname">DISCOUNT_FACTOR</code><em class="property"> = '-df'</em><a class="headerlink" href="#core.common.util.OPS.DISCOUNT_FACTOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.DOUBLE">
+<code class="descname">DOUBLE</code><em class="property"> = '-double'</em><a class="headerlink" href="#core.common.util.OPS.DOUBLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.DUELING">
+<code class="descname">DUELING</code><em class="property"> = '-dueling'</em><a class="headerlink" href="#core.common.util.OPS.DUELING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.ENTROPY_LOSS">
+<code class="descname">ENTROPY_LOSS</code><em class="property"> = '-ent_loss'</em><a class="headerlink" href="#core.common.util.OPS.ENTROPY_LOSS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.EPOCHS">
+<code class="descname">EPOCHS</code><em class="property"> = '-epo'</em><a class="headerlink" href="#core.common.util.OPS.EPOCHS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.FRAMES_PER_STEP">
+<code class="descname">FRAMES_PER_STEP</code><em class="property"> = '-frms-per-step'</em><a class="headerlink" href="#core.common.util.OPS.FRAMES_PER_STEP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.GAMMA">
+<code class="descname">GAMMA</code><em class="property"> = '-gamma'</em><a class="headerlink" href="#core.common.util.OPS.GAMMA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.LEARNING_ACTOR_RATE">
+<code class="descname">LEARNING_ACTOR_RATE</code><em class="property"> = '-actor-lr'</em><a class="headerlink" href="#core.common.util.OPS.LEARNING_ACTOR_RATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.LEARNING_CRITIC_RATE">
+<code class="descname">LEARNING_CRITIC_RATE</code><em class="property"> = '-critic-lr'</em><a class="headerlink" href="#core.common.util.OPS.LEARNING_CRITIC_RATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.LEARNING_RATE">
+<code class="descname">LEARNING_RATE</code><em class="property"> = '-lr'</em><a class="headerlink" href="#core.common.util.OPS.LEARNING_RATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.MARGINAL_SPACE">
+<code class="descname">MARGINAL_SPACE</code><em class="property"> = '-m-s'</em><a class="headerlink" href="#core.common.util.OPS.MARGINAL_SPACE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.MOVE_ANG">
+<code class="descname">MOVE_ANG</code><em class="property"> = '-move_a'</em><a class="headerlink" href="#core.common.util.OPS.MOVE_ANG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.MOVE_DIST">
+<code class="descname">MOVE_DIST</code><em class="property"> = '-move_d'</em><a class="headerlink" href="#core.common.util.OPS.MOVE_DIST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.NO_GUI">
+<code class="descname">NO_GUI</code><em class="property"> = '-no-gui'</em><a class="headerlink" href="#core.common.util.OPS.NO_GUI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.N_STEPS">
+<code class="descname">N_STEPS</code><em class="property"> = '-nsteps'</em><a class="headerlink" href="#core.common.util.OPS.N_STEPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.OU_SIGMA">
+<code class="descname">OU_SIGMA</code><em class="property"> = '-ou-sm'</em><a class="headerlink" href="#core.common.util.OPS.OU_SIGMA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.OU_THETA">
+<code class="descname">OU_THETA</code><em class="property"> = '-ou-tt'</em><a class="headerlink" href="#core.common.util.OPS.OU_THETA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.PER">
+<code class="descname">PER</code><em class="property"> = '-PER'</em><a class="headerlink" href="#core.common.util.OPS.PER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.POLICY">
+<code class="descname">POLICY</code><em class="property"> = '-p'</em><a class="headerlink" href="#core.common.util.OPS.POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.PURE_ACTION_RATIO">
+<code class="descname">PURE_ACTION_RATIO</code><em class="property"> = '-ratio-pure-action'</em><a class="headerlink" href="#core.common.util.OPS.PURE_ACTION_RATIO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.REPLAY_MEMORY_SIZE">
+<code class="descname">REPLAY_MEMORY_SIZE</code><em class="property"> = '-repm-size'</em><a class="headerlink" href="#core.common.util.OPS.REPLAY_MEMORY_SIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.REWARD_HEIGHT_RANK_WEIGHT">
+<code class="descname">REWARD_HEIGHT_RANK_WEIGHT</code><em class="property"> = '-r-w'</em><a class="headerlink" href="#core.common.util.OPS.REWARD_HEIGHT_RANK_WEIGHT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.REWARD_SCALE">
+<code class="descname">REWARD_SCALE</code><em class="property"> = '-rc'</em><a class="headerlink" href="#core.common.util.OPS.REWARD_SCALE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.REWARD_VERSION">
+<code class="descname">REWARD_VERSION</code><em class="property"> = '-rv'</em><a class="headerlink" href="#core.common.util.OPS.REWARD_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.TARGET_NETWORK_UPDATE_INTERVAL">
+<code class="descname">TARGET_NETWORK_UPDATE_INTERVAL</code><em class="property"> = '-tn-u-invl'</em><a class="headerlink" href="#core.common.util.OPS.TARGET_NETWORK_UPDATE_INTERVAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.TIME_PENALTY_WEIGHT">
+<code class="descname">TIME_PENALTY_WEIGHT</code><em class="property"> = '-p-t'</em><a class="headerlink" href="#core.common.util.OPS.TIME_PENALTY_WEIGHT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.TIME_WINDOW">
+<code class="descname">TIME_WINDOW</code><em class="property"> = '-t-w'</em><a class="headerlink" href="#core.common.util.OPS.TIME_WINDOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.USE_PARAMETERIZED_NOISE">
+<code class="descname">USE_PARAMETERIZED_NOISE</code><em class="property"> = '-p-noise'</em><a class="headerlink" href="#core.common.util.OPS.USE_PARAMETERIZED_NOISE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.common.util.OPS.WINDOW_LENGTH">
+<code class="descname">WINDOW_LENGTH</code><em class="property"> = '-window-length'</em><a class="headerlink" href="#core.common.util.OPS.WINDOW_LENGTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.util.PopArtLayer">
+<em class="property">class </em><code class="descclassname">core.common.util.</code><code class="descname">PopArtLayer</code><span class="sig-paren">(</span><em>beta=0.0001</em>, <em>epsilon=0.0001</em>, <em>stable_rate=0.1</em>, <em>min_steps=1000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.PopArtLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">keras.engine.base_layer.Layer</span></code></p>
+<p>Automatic network output scale adjuster, which is supposed to keep
+the output of the network up to date as we keep updating moving
+average and variance of discounted returns.
+Part of the PopArt algorithm described in DeepMind’s paper
+“Learning values across many orders of magnitude”
+(<a class="reference external" href="https://arxiv.org/abs/1602.07714">https://arxiv.org/abs/1602.07714</a>)</p>
+<dl class="method">
+<dt id="core.common.util.PopArtLayer.build">
+<code class="descname">build</code><span class="sig-paren">(</span><em>input_shape</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.PopArtLayer.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the layer weights.</p>
+<p>Must be implemented on all layers that have weights.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd><dl class="first last docutils">
+<dt>input_shape: Keras tensor (future input to layer)</dt>
+<dd>or list/tuple of Keras tensors to reference
+for weight shape computations.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.util.PopArtLayer.call">
+<code class="descname">call</code><span class="sig-paren">(</span><em>inputs</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.PopArtLayer.call" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is where the layer’s logic lives.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>inputs: Input tensor, or list/tuple of input tensors.
+<a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs: Additional keyword arguments.</dd>
+<dt># Returns</dt>
+<dd>A tensor or list/tuple of tensors.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.util.PopArtLayer.compute_output_shape">
+<code class="descname">compute_output_shape</code><span class="sig-paren">(</span><em>input_shape</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.PopArtLayer.compute_output_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the output shape of the layer.</p>
+<p>Assumes that the layer will be built
+to match that input shape provided.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd><dl class="first last docutils">
+<dt>input_shape: Shape tuple (tuple of integers)</dt>
+<dd>or list of shape tuples (one per output tensor of the layer).
+Shape tuples can include None for free dimensions,
+instead of an integer.</dd>
+</dl>
+</dd>
+<dt># Returns</dt>
+<dd>An input shape tuple.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.util.PopArtLayer.de_normalize">
+<code class="descname">de_normalize</code><span class="sig-paren">(</span><em>x: numpy.ndarray</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#core.common.util.PopArtLayer.de_normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts previously normalized data into original values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.util.PopArtLayer.pop_art_update">
+<code class="descname">pop_art_update</code><span class="sig-paren">(</span><em>x: numpy.ndarray</em><span class="sig-paren">)</span> &#x2192; Tuple[float, float]<a class="headerlink" href="#core.common.util.PopArtLayer.pop_art_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs ART (Adaptively Rescaling Targets) update,
+adjusting normalization parameters with respect to new targets x.
+Updates running mean, mean of squares and returns
+new mean and standard deviation for later use.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.common.util.PopArtLayer.update_and_normalize">
+<code class="descname">update_and_normalize</code><span class="sig-paren">(</span><em>x: numpy.ndarray</em><span class="sig-paren">)</span> &#x2192; Tuple[numpy.ndarray, float, float]<a class="headerlink" href="#core.common.util.PopArtLayer.update_and_normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalizes given tensor <cite>x</cite> and updates parameters associated
+with PopArt: running means (art) and network’s output scaling (pop).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.util.RunningMeanStd">
+<em class="property">class </em><code class="descclassname">core.common.util.</code><code class="descname">RunningMeanStd</code><span class="sig-paren">(</span><em>my</em>, <em>epsilon=0.01</em>, <em>shape=()</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.RunningMeanStd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="core.common.util.RunningMeanStd.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.RunningMeanStd.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.auto_executor">
+<code class="descclassname">core.common.util.</code><code class="descname">auto_executor</code><span class="sig-paren">(</span><em>params</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.auto_executor" title="Permalink to this definition">¶</a></dt>
+<dd><p>사용법
+1. 사용하고 싶은 옵션을 OPS enum 클래스에 추가한다.
+2. params에 enum 의 값을 배열로 입력한다. ex : param[OPS.추가한옵션.value] = [실행할 변수 list]
+3. 수행할 filename 을 입력한다.</p>
+<ol class="arabic simple" start="4">
+<li>호출되는 소스에서 arg 처리를 해준다.</li>
+</ol>
+<p>import argparse
+from core.common.util import OPS</p>
+<p>parser = argparse.ArgumentParser(description=’DQN Configuration including setting dqn / double dqn / double dueling dqn’)</p>
+<p>parser.add_argument(OPS.NO_GUI.value, help=’gui’, type=bool, default=False)
+parser.add_argument(OPS.DOUBLE.value, help=’double dqn’, default=False, action=’store_true’)
+parser.add_argument(OPS.DUELING.value, help=’dueling dqn’, default=False, action=’store_true’)
+parser.add_argument(OPS.DRQN.value, help=”drqn”, default=False, action=’store_true’)
+parser.add_argument(OPS.BATCH_SIZE.value, type=int, default=128, help=”batch size”)
+parser.add_argument(OPS.REPLAY_MEMORY_SIZE.value, type=int, default=8000, help=”replay memory size”)
+parser.add_argument(OPS.LEARNING_RATE.value, type=float, default=0.001, help=”learning rate”)
+parser.add_argument(OPS.TARGET_NETWORK_UPDATE_INTERVAL.value, type=int, default=60, help=”target_network_update_interval”)
+.
+.
+.
+parser.add_argument(“추가한 옵션”, type=타입, default=기본값, help=”help 에 표시될 도움말” …)</p>
+<p>args = parser.parse_args()</p>
+<p>dict_args = vars(args)
+post_fix = ‘’
+for k in dict_args.keys():</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>if k == ‘no_gui’:</dt>
+<dd>continue</dd>
+</dl>
+<p>post_fix += ‘_’ + k + ‘_’ + str(dict_args[k])</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>args 를 적절히 소스에 사용해준다.</li>
+<li>output file naming 에 post_fix 를 추가해주면 좋음.</li>
+</ol>
+</dd></dl>
+
+<dl class="class">
+<dt id="core.common.util.cLogger">
+<em class="property">class </em><code class="descclassname">core.common.util.</code><code class="descname">cLogger</code><a class="headerlink" href="#core.common.util.cLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="staticmethod">
+<dt id="core.common.util.cLogger.getLogger">
+<em class="property">static </em><code class="descname">getLogger</code><span class="sig-paren">(</span><em>loggerName='not_init'</em>, <em>loggerFile=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.cLogger.getLogger" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.clipped_masked_error">
+<code class="descclassname">core.common.util.</code><code class="descname">clipped_masked_error</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em>, <em>mask</em>, <em>delta_clip</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.clipped_masked_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.clone_model">
+<code class="descclassname">core.common.util.</code><code class="descname">clone_model</code><span class="sig-paren">(</span><em>model</em>, <em>custom_objects={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.clone_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>model_copy = keras.models.clone_model(model)
+model_copy.set_weights(model.get_weights())</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.clone_optimizer">
+<code class="descclassname">core.common.util.</code><code class="descname">clone_optimizer</code><span class="sig-paren">(</span><em>optimizer</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.clone_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.denormalize">
+<code class="descclassname">core.common.util.</code><code class="descname">denormalize</code><span class="sig-paren">(</span><em>x</em>, <em>stats</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.denormalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.display_param_dic">
+<code class="descclassname">core.common.util.</code><code class="descname">display_param_dic</code><span class="sig-paren">(</span><em>params={}</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.display_param_dic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.display_param_list">
+<code class="descclassname">core.common.util.</code><code class="descname">display_param_list</code><span class="sig-paren">(</span><em>params=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.display_param_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.gen_agent_params">
+<code class="descclassname">core.common.util.</code><code class="descname">gen_agent_params</code><span class="sig-paren">(</span><em>params={}</em>, <em>filepath=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.gen_agent_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.get_kv_from_agent">
+<code class="descclassname">core.common.util.</code><code class="descname">get_kv_from_agent</code><span class="sig-paren">(</span><em>agent</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.get_kv_from_agent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.get_logger">
+<code class="descclassname">core.common.util.</code><code class="descname">get_logger</code><span class="sig-paren">(</span><em>logger_name</em>, <em>logger_level</em>, <em>use_stream_handler=True</em>, <em>use_file_handler=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.get_logger" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.get_soft_target_model_updates">
+<code class="descclassname">core.common.util.</code><code class="descname">get_soft_target_model_updates</code><span class="sig-paren">(</span><em>target</em>, <em>source</em>, <em>tau</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.get_soft_target_model_updates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.gradients">
+<code class="descclassname">core.common.util.</code><code class="descname">gradients</code><span class="sig-paren">(</span><em>loss</em>, <em>variables</em>, <em>grad_ys</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.gradients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the gradients of <cite>loss</cite> w.r.t. <cite>variables</cite>.
+# Arguments</p>
+<blockquote>
+<div>loss: Scalar tensor to minimize.
+variables: List of variables.</div></blockquote>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>A gradients tensor.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.gumbel_softmax">
+<code class="descclassname">core.common.util.</code><code class="descname">gumbel_softmax</code><span class="sig-paren">(</span><em>logits</em>, <em>temperature=1</em>, <em>hard=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.gumbel_softmax" title="Permalink to this definition">¶</a></dt>
+<dd><p>referenced by # <a class="reference external" href="https://github.com/ericjang/gumbel-softmax">https://github.com/ericjang/gumbel-softmax</a></p>
+<p>Sample from the Gumbel-Softmax distribution and optionally discretize.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>logits: [batch_size, n_class] unnormalized log-probs
+temperature: non-negative scalar
+hard: if True, take argmax, but differentiate w.r.t. soft sample y</dd>
+<dt>Returns:</dt>
+<dd>[batch_size, n_class] sample from the Gumbel-Softmax distribution.
+If hard=True, then the returned sample will be one-hot, otherwise it will
+be a probabilitiy distribution that sums to 1 across classes</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.gumbel_softmax_sample">
+<code class="descclassname">core.common.util.</code><code class="descname">gumbel_softmax_sample</code><span class="sig-paren">(</span><em>logits</em>, <em>temperature</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.gumbel_softmax_sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a sample from the Gumbel-Softmax distribution</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.huber_loss">
+<code class="descclassname">core.common.util.</code><code class="descname">huber_loss</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em>, <em>clip_value</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.huber_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.mmdd24hhmmss">
+<code class="descclassname">core.common.util.</code><code class="descname">mmdd24hhmmss</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.mmdd24hhmmss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.normalize">
+<code class="descclassname">core.common.util.</code><code class="descname">normalize</code><span class="sig-paren">(</span><em>x</em>, <em>stats</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.normalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.pickle_to_plot">
+<code class="descclassname">core.common.util.</code><code class="descname">pickle_to_plot</code><span class="sig-paren">(</span><em>pickle_name</em>, <em>png_filename</em>, <em>title=''</em>, <em>time_window=100</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.pickle_to_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.reward_moving_avg_plot">
+<code class="descclassname">core.common.util.</code><code class="descname">reward_moving_avg_plot</code><span class="sig-paren">(</span><em>y_data_list=[]</em>, <em>title=''</em>, <em>label='reward'</em>, <em>window=100</em>, <em>filepath='plot.png'</em>, <em>shadow_color_index=5</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.reward_moving_avg_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>save reward plot
+:param rewards: reward list
+:param window: moving average time window
+:param filepath: plot file to be saved
+:param shadow_color_index: color palette index number
+:return: None</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.reward_quantile_plot">
+<code class="descclassname">core.common.util.</code><code class="descname">reward_quantile_plot</code><span class="sig-paren">(</span><em>y_data_list=[]</em>, <em>title=None</em>, <em>label='reward'</em>, <em>window=100</em>, <em>filepath='plot.png'</em>, <em>shadow_color_index=5</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.reward_quantile_plot" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>y_data_list</strong> – reward list</li>
+<li><strong>title</strong> – optional, title</li>
+<li><strong>label</strong> – y axis label</li>
+<li><strong>window</strong> – moving average time window</li>
+<li><strong>filepath</strong> – plot file to be saved</li>
+<li><strong>shadow_color_index</strong> – <table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">param shadow_color_index:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.sample_gumbel">
+<code class="descclassname">core.common.util.</code><code class="descname">sample_gumbel</code><span class="sig-paren">(</span><em>shape</em>, <em>eps=1e-20</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.sample_gumbel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample from Gumbel(0, 1)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.save_ci_graph">
+<code class="descclassname">core.common.util.</code><code class="descname">save_ci_graph</code><span class="sig-paren">(</span><em>y_data_list=[]</em>, <em>title='Some Graph'</em>, <em>xlabel='episode'</em>, <em>ylabel='reward'</em>, <em>window=100</em>, <em>filepath='plot.png'</em>, <em>y_data=[]</em>, <em>y_index=[]</em>, <em>figsize=(12</em>, <em>8)</em>, <em>title_font_size=20</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.save_ci_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>save reward plot
+:param window: moving average time window
+:param filepath: plot file to be saved
+:return: None</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.save_ci_graph_from_tuple">
+<code class="descclassname">core.common.util.</code><code class="descname">save_ci_graph_from_tuple</code><span class="sig-paren">(</span><em>y_data_list=[]</em>, <em>graph_title=[]</em>, <em>window=1000</em>, <em>filepath='2plot.png'</em>, <em>y_data_legend=[]</em>, <em>y_index=[]</em>, <em>figsize=(12</em>, <em>8)</em>, <em>title_font_size=20</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.save_ci_graph_from_tuple" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.save_plot">
+<code class="descclassname">core.common.util.</code><code class="descname">save_plot</code><span class="sig-paren">(</span><em>FILE_NAME</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.save_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.smoothL1">
+<code class="descclassname">core.common.util.</code><code class="descname">smoothL1</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.smoothL1" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://stackoverflow.com/questions/44130871/keras-smooth-l1-loss">https://stackoverflow.com/questions/44130871/keras-smooth-l1-loss</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.common.util.yyyymmdd24hhmmss">
+<code class="descclassname">core.common.util.</code><code class="descname">yyyymmdd24hhmmss</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.common.util.yyyymmdd24hhmmss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-core.common">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-core.common" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="core.algorithm.html" class="btn btn-neutral float-left" title="core.algorithm package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, SAIDA
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

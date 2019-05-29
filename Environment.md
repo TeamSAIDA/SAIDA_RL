@@ -1,0 +1,12 @@
+- version (integer): version of the map. The difficulty is various according to the version. (default = 0)
+- action_type (integer) : 0 is the discrete action space, 1 and 2 are the continuous action space.
+- frames_per_step (integer): determine how many frames will be skipped in one step of action.
+- move_angle (integer) : in case of discrete action type, this value determines the total number of action spaces. 360 degrees divided by 'move_angle' will be the number of action spaces.  
+For example, if 'move_angle' is 30, 360/30 = 12 will be the number of action spaces. That means this value should be divisor of 360.
+- move_dist (integer): determine how far the agent will move in one step. unit = tile size (1 tile = 32px)
+- verbose (integer): log level
+- bot_runner (bool): None only if you don't want to execute starcraft bot automatically.
+- no_gui (bool): True if you want to render the game.(default : False)
+- local_speed (integer): the play speed of starcraft in game (default : 0)
+- auto_kill (bool): True if you want to kill ongoing starcraft process. (default : True)
+- random_seed (integer): random seed value which determines randomness of starcraft

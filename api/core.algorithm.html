@@ -1,0 +1,1056 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>core.algorithm package &mdash; SAIDA_RL  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="/SAIDA_RL/assets/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="/SAIDA_RL/assets/documentation_options.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/jquery.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/underscore.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/doctools.js"></script>
+        <script type="text/javascript" src="/SAIDA_RL/assets/language_data.js"></script>
+    
+    <script type="text/javascript" src="/SAIDA_RL/assets/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="/SAIDA_RL/assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="/SAIDA_RL/assets/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="core.common package" href="core.common.html" />
+    <link rel="prev" title="core package" href="core.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SAIDA_RL
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="core.html">core package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="core.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">core.algorithm package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.A2C">core.algorithm.A2C module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.DDPG">core.algorithm.DDPG module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.DQN">core.algorithm.DQN module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.Deep_sarsa">core.algorithm.Deep_sarsa module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.MADDPG">core.algorithm.MADDPG module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.MADQN">core.algorithm.MADQN module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.PPO">core.algorithm.PPO module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.QLearning">core.algorithm.QLearning module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm.REINFORCE">core.algorithm.REINFORCE module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-core.algorithm">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="core.common.html">core.common package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#module-core.callbacks">core.callbacks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#module-core.memories">core.memories module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#module-core.policies">core.policies module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html#module-core">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SAIDA_RL</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="core.html">core package</a> &raquo;</li>
+        
+      <li>core.algorithm package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="core-algorithm-package">
+<h1>core.algorithm package<a class="headerlink" href="#core-algorithm-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-core.algorithm.A2C">
+<span id="core-algorithm-a2c-module"></span><h2>core.algorithm.A2C module<a class="headerlink" href="#module-core.algorithm.A2C" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.algorithm.A2C.A2CAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.A2C.</code><code class="descname">A2CAgent</code><span class="sig-paren">(</span><em>state_size</em>, <em>action_size</em>, <em>actor</em>, <em>critic</em>, <em>load_model=True</em>, <em>training_mode=True</em>, <em>discount_factor=0.99</em>, <em>actor_lr=0.001</em>, <em>critic_lr=0.005</em>, <em>file_path_actor=''</em>, <em>file_path_critic=''</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.A2C.A2CAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.agent.Agent" title="core.common.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.agent.Agent</span></code></a></p>
+<dl class="method">
+<dt id="core.algorithm.A2C.A2CAgent.actor_optimizer">
+<code class="descname">actor_optimizer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.A2C.A2CAgent.actor_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create optimizer for actor network model</p>
+<dl class="docutils">
+<dt># return</dt>
+<dd>Keras function (object)</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.A2C.A2CAgent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.A2C.A2CAgent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates critic and actor network
+See the details in agent.py</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.A2C.A2CAgent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.A2C.A2CAgent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compiles an agent and the underlaying models to be used for training and testing.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>optimizer (<cite>keras.optimizers.Optimizer</cite> instance): The optimizer to be used during training.
+metrics (list of functions <cite>lambda y_true, y_pred: metric</cite>): The metrics to run during training.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.A2C.A2CAgent.critic_optimizer">
+<code class="descname">critic_optimizer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.A2C.A2CAgent.critic_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create optimizer for critic network model</p>
+<dl class="docutils">
+<dt># return</dt>
+<dd>Keras function (object)</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.A2C.A2CAgent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.A2C.A2CAgent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the an observation from the environment and returns the action to be taken next.
+See the details in agent.py</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.A2C.A2CAgent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.A2C.A2CAgent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the weights of an agent from an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str or list): The path to the HDF5 files. In case of algorithms using multiple models, it could be list of path of models.
+filename (str or list): The name to the HDF5 files. In case of algorithms using multiple models, it could be list of name of models.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.A2C.A2CAgent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.A2C.A2CAgent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the weights of an agent as an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str): The path to where the weights should be saved.
+overwrite (boolean): If <cite>False</cite> and <cite>filepath</cite> already exists, raises an error.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm.DDPG">
+<span id="core-algorithm-ddpg-module"></span><h2>core.algorithm.DDPG module<a class="headerlink" href="#module-core.algorithm.DDPG" title="Permalink to this headline">¶</a></h2>
+<p>referenced by
+<a class="reference external" href="https://github.com/pemami4911/deep-rl/blob/master/ddpg/ddpg.py">https://github.com/pemami4911/deep-rl/blob/master/ddpg/ddpg.py</a></p>
+<dl class="class">
+<dt id="core.algorithm.DDPG.DDPGAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.DDPG.</code><code class="descname">DDPGAgent</code><span class="sig-paren">(</span><em>actor</em>, <em>critic</em>, <em>action_shape</em>, <em>memory</em>, <em>critic_action_input</em>, <em>policy=None</em>, <em>test_policy=None</em>, <em>discount_factor=0.99</em>, <em>learning_rate=0.001</em>, <em>batch_size=32</em>, <em>train_interval=1</em>, <em>delta_clip=inf</em>, <em>nb_warmup_critic_step_cnt=500</em>, <em>nb_warmup_actor_step_cnt=500</em>, <em>random_process=None</em>, <em>tau_for_actor=0.001</em>, <em>tau_for_critic=0.001</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.agent.Agent" title="core.common.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.agent.Agent</span></code></a></p>
+<dl class="method">
+<dt id="core.algorithm.DDPG.DDPGAgent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the agent after having executed the action returned by <cite>forward</cite>.
+If the policy is implemented by a neural network, this corresponds to a weight update using back-prop.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>reward (float): The observed reward after executing the action returned by <cite>forward</cite>.
+terminal (boolean): <cite>True</cite> if the new state of the environment is terminal.</dd>
+<dt># Returns</dt>
+<dd>List of metrics values</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DDPG.DDPGAgent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compiles an agent and the underlaying models to be used for training and testing.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>optimizer (<cite>keras.optimizers.Optimizer</cite> instance): The optimizer to be used during training.
+metrics (list of functions <cite>lambda y_true, y_pred: metric</cite>): The metrics to run during training.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DDPG.DDPGAgent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p># Select an action.
+state = self.memory.get_recent_state(observation)
+action = self.select_action(state)  # TODO: move this into policy</p>
+<p># Book-keeping.
+self.recent_observation = observation
+self.recent_action = action</p>
+<p>return action</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>observation</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.DDPG.DDPGAgent.layers">
+<code class="descname">layers</code><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all layers of the underlying model(s).</p>
+<p>If the concrete implementation uses multiple internal models,
+this method returns them in a concatenated list.</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>A list of the model’s layers</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DDPG.DDPGAgent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the weights of an agent from an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str or list): The path to the HDF5 files. In case of algorithms using multiple models, it could be list of path of models.
+filename (str or list): The name to the HDF5 files. In case of algorithms using multiple models, it could be list of name of models.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DDPG.DDPGAgent.process_state_batch">
+<code class="descname">process_state_batch</code><span class="sig-paren">(</span><em>batch</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.process_state_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DDPG.DDPGAgent.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets all internally kept states after an episode is completed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DDPG.DDPGAgent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>filename</em>, <em>yyyymmdd=None</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the weights of an agent as an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str): The path to where the weights should be saved.
+overwrite (boolean): If <cite>False</cite> and <cite>filepath</cite> already exists, raises an error.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DDPG.DDPGAgent.update_target_model_hard">
+<code class="descname">update_target_model_hard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.update_target_model_hard" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.DDPG.DDPGAgent.uses_learning_phase">
+<code class="descname">uses_learning_phase</code><a class="headerlink" href="#core.algorithm.DDPG.DDPGAgent.uses_learning_phase" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.algorithm.DDPG.ddpg_distance_metric">
+<code class="descclassname">core.algorithm.DDPG.</code><code class="descname">ddpg_distance_metric</code><span class="sig-paren">(</span><em>actions1</em>, <em>actions2</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.ddpg_distance_metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute “distance” between actions taken by two policies at the same states
+Expects numpy arrays</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.algorithm.DDPG.hard_update">
+<code class="descclassname">core.algorithm.DDPG.</code><code class="descname">hard_update</code><span class="sig-paren">(</span><em>target</em>, <em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DDPG.hard_update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm.DQN">
+<span id="core-algorithm-dqn-module"></span><h2>core.algorithm.DQN module<a class="headerlink" href="#module-core.algorithm.DQN" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.algorithm.DQN.DQNAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.DQN.</code><code class="descname">DQNAgent</code><span class="sig-paren">(</span><em>model</em>, <em>nb_actions</em>, <em>memory</em>, <em>discount_factor=0.99</em>, <em>batch_size=32</em>, <em>train_interval=1000</em>, <em>target_model_update=10000</em>, <em>delta_clip=inf</em>, <em>warmup_step_cnt=1000</em>, <em>enable_dueling=False</em>, <em>memory_interval=1</em>, <em>enable_double=False</em>, <em>dueling_type='avg'</em>, <em>policy=None</em>, <em>test_policy=None</em>, <em>enable_encouraged_action=False</em>, <em>enable_discouraged_action=False</em>, <em>action_affected_observation_space=None</em>, <em>enable_pop_art=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.agent.Agent" title="core.common.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.agent.Agent</span></code></a></p>
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.append_replay_memory">
+<code class="descname">append_replay_memory</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.append_replay_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>reward</strong> – </li>
+<li><strong>terminal</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>reward</strong> – </li>
+<li><strong>terminal</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compiles an agent and the underlaying models to be used for training and testing.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>optimizer (<cite>keras.optimizers.Optimizer</cite> instance): The optimizer to be used during training.
+metrics (list of functions <cite>lambda y_true, y_pred: metric</cite>): The metrics to run during training.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>choose action
+:param observation: observation which is used for agent to choose action
+:return: action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filepath</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.DQN.DQNAgent.policy">
+<code class="descname">policy</code><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.policy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.process_state_batch">
+<code class="descname">process_state_batch</code><span class="sig-paren">(</span><em>batch</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.process_state_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>you can specify any logic which run whenever episode ends.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>overwrite=False</em>, <em>force=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filepath</strong> – </li>
+<li><strong>overwrite</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.DQN.DQNAgent.test_policy">
+<code class="descname">test_policy</code><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.test_policy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.DQN.DQNAgent.update_target_model_hard">
+<code class="descname">update_target_model_hard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.DQN.DQNAgent.update_target_model_hard" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm.Deep_sarsa">
+<span id="core-algorithm-deep-sarsa-module"></span><h2>core.algorithm.Deep_sarsa module<a class="headerlink" href="#module-core.algorithm.Deep_sarsa" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.algorithm.Deep_sarsa.DeepSARSAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.Deep_sarsa.</code><code class="descname">DeepSARSAgent</code><span class="sig-paren">(</span><em>action_size</em>, <em>model</em>, <em>load_model=True</em>, <em>discount_factor=0.99</em>, <em>learning_rate=0.001</em>, <em>epsilon=1</em>, <em>epsilon_decay=0.999</em>, <em>epsilon_min=0.01</em>, <em>file_path=''</em>, <em>training_mode=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.Deep_sarsa.DeepSARSAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.agent.Agent" title="core.common.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.agent.Agent</span></code></a></p>
+<dl class="method">
+<dt id="core.algorithm.Deep_sarsa.DeepSARSAgent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.Deep_sarsa.DeepSARSAgent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the agent’s network</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.Deep_sarsa.DeepSARSAgent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.Deep_sarsa.DeepSARSAgent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compile the model</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.Deep_sarsa.DeepSARSAgent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.Deep_sarsa.DeepSARSAgent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get action to be taken from observation
+See the description in agent.py</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.Deep_sarsa.DeepSARSAgent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.Deep_sarsa.DeepSARSAgent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load trained weight from an HDF5 file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.Deep_sarsa.DeepSARSAgent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.Deep_sarsa.DeepSARSAgent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save trained weight from an HDF5 file.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm.MADDPG">
+<span id="core-algorithm-maddpg-module"></span><h2>core.algorithm.MADDPG module<a class="headerlink" href="#module-core.algorithm.MADDPG" title="Permalink to this headline">¶</a></h2>
+<p># Based on Deep DPG as described by Lillicrap et al. (2015)
+# <a class="reference external" href="http://arxiv.org/pdf/1509.02971v2.pdf">http://arxiv.org/pdf/1509.02971v2.pdf</a>
+# <a class="reference external" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.646.4324&amp;rep=rep1&amp;type=pdf">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.646.4324&amp;rep=rep1&amp;type=pdf</a></p>
+<dl class="class">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.MADDPG.</code><code class="descname">MA_DDPGAgent</code><span class="sig-paren">(</span><em>nb_agents</em>, <em>nb_actions</em>, <em>actor</em>, <em>critic</em>, <em>critic_action_input</em>, <em>memory</em>, <em>gamma=0.99</em>, <em>batch_size=32</em>, <em>nb_steps_warmup_critic=1000</em>, <em>nb_steps_warmup_actor=1000</em>, <em>train_interval=1</em>, <em>memory_interval=1</em>, <em>delta_range=None</em>, <em>delta_clip=inf</em>, <em>random_process=None</em>, <em>custom_model_objects={}</em>, <em>target_model_update=0.001</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rl.core.Agent</span></code></p>
+<p>Write me</p>
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the agent after having executed the action returned by <cite>forward</cite>.
+If the policy is implemented by a neural network, this corresponds to a weight update using back-prop.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>reward (float): The observed reward after executing the action returned by <cite>forward</cite>.
+terminal (boolean): <cite>True</cite> if the new state of the environment is terminal.</dd>
+<dt># Returns</dt>
+<dd>List of metrics values</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compiles an agent and the underlaying models to be used for training and testing.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>optimizer (<cite>keras.optimizers.Optimizer</cite> instance): The optimizer to be used during training.
+metrics (list of functions <cite>lambda y_true, y_pred: metric</cite>): The metrics to run during training.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the an observation from the environment and returns the action to be taken next.
+If the policy is implemented by a neural network, this corresponds to a forward (inference) pass.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>observation (object): The current observation from the environment.</dd>
+<dt># Returns</dt>
+<dd>The next action to be executed in the environment.</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.layers">
+<code class="descname">layers</code><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all layers of the underlying model(s).</p>
+<p>If the concrete implementation uses multiple internal models,
+this method returns them in a concatenated list.</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>A list of the model’s layers</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the weights of an agent from an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str): The path to the HDF5 file.</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.metrics_names">
+<code class="descname">metrics_names</code><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.metrics_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>The human-readable names of the agent’s metrics. Must return as many names as there
+are metrics (see also <cite>compile</cite>).</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>A list of metric’s names (string)</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.process_state_batch">
+<code class="descname">process_state_batch</code><span class="sig-paren">(</span><em>batch</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.process_state_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets all internally kept states after an episode is completed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the weights of an agent as an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str): The path to where the weights should be saved.
+overwrite (boolean): If <cite>False</cite> and <cite>filepath</cite> already exists, raises an error.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.select_action">
+<code class="descname">select_action</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.select_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.update_target_models_hard">
+<code class="descname">update_target_models_hard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.update_target_models_hard" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.MADDPG.MA_DDPGAgent.uses_learning_phase">
+<code class="descname">uses_learning_phase</code><a class="headerlink" href="#core.algorithm.MADDPG.MA_DDPGAgent.uses_learning_phase" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.algorithm.MADDPG.mean_q">
+<code class="descclassname">core.algorithm.MADDPG.</code><code class="descname">mean_q</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADDPG.mean_q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm.MADQN">
+<span id="core-algorithm-madqn-module"></span><h2>core.algorithm.MADQN module<a class="headerlink" href="#module-core.algorithm.MADQN" title="Permalink to this headline">¶</a></h2>
+<p>Based on implementation of the DQN agent as described in Mnih (2013) and Mnih (2015).
+<a class="reference external" href="http://arxiv.org/pdf/1312.5602.pdf">http://arxiv.org/pdf/1312.5602.pdf</a>
+<a class="reference external" href="http://arxiv.org/abs/1509.06461">http://arxiv.org/abs/1509.06461</a></p>
+<dl class="class">
+<dt id="core.algorithm.MADQN.AbstractMA_DQNAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.MADQN.</code><code class="descname">AbstractMA_DQNAgent</code><span class="sig-paren">(</span><em>nb_agents</em>, <em>nb_actions</em>, <em>memory</em>, <em>gamma=0.99</em>, <em>batch_size=32</em>, <em>nb_steps_warmup=1000</em>, <em>train_interval=1</em>, <em>memory_interval=1</em>, <em>target_model_update=10000</em>, <em>delta_range=None</em>, <em>delta_clip=inf</em>, <em>custom_model_objects={}</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.AbstractMA_DQNAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.agent.Agent" title="core.common.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.agent.Agent</span></code></a></p>
+<p>Write me</p>
+<dl class="method">
+<dt id="core.algorithm.MADQN.AbstractMA_DQNAgent.compute_batch_q_values">
+<code class="descname">compute_batch_q_values</code><span class="sig-paren">(</span><em>state_batch</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.AbstractMA_DQNAgent.compute_batch_q_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.AbstractMA_DQNAgent.compute_q_values">
+<code class="descname">compute_q_values</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.AbstractMA_DQNAgent.compute_q_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.AbstractMA_DQNAgent.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.AbstractMA_DQNAgent.get_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.AbstractMA_DQNAgent.process_state_batch">
+<code class="descname">process_state_batch</code><span class="sig-paren">(</span><em>batch</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.AbstractMA_DQNAgent.process_state_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.algorithm.MADQN.MA_DQNAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.MADQN.</code><code class="descname">MA_DQNAgent</code><span class="sig-paren">(</span><em>model</em>, <em>policy=None</em>, <em>test_policy=None</em>, <em>enable_double_dqn=True</em>, <em>enable_dueling_network=False</em>, <em>dueling_type='avg'</em>, <em>enable_encouraged_action=False</em>, <em>enable_discouraged_action=False</em>, <em>action_affected_observation_space=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#core.algorithm.MADQN.AbstractMA_DQNAgent" title="core.algorithm.MADQN.AbstractMA_DQNAgent"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.algorithm.MADQN.AbstractMA_DQNAgent</span></code></a></p>
+<dl class="method">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the agent after having executed the action returned by <cite>forward</cite>.
+If the policy is implemented by a neural network, this corresponds to a weight update using back-prop.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>reward (float): The observed reward after executing the action returned by <cite>forward</cite>.
+terminal (boolean): <cite>True</cite> if the new state of the environment is terminal.</dd>
+<dt># Returns</dt>
+<dd>List of metrics values</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compiles an agent and the underlaying models to be used for training and testing.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>optimizer (<cite>keras.optimizers.Optimizer</cite> instance): The optimizer to be used during training.
+metrics (list of functions <cite>lambda y_true, y_pred: metric</cite>): The metrics to run during training.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the an observation from the environment and returns the action to be taken next.
+If the policy is implemented by a neural network, this corresponds to a forward (inference) pass.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>observation (object): The current observation from the environment.</dd>
+<dt># Returns</dt>
+<dd>The next action to be executed in the environment.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.get_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.layers">
+<code class="descname">layers</code><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all layers of the underlying model(s).</p>
+<p>If the concrete implementation uses multiple internal models,
+this method returns them in a concatenated list.</p>
+<dl class="docutils">
+<dt># Returns</dt>
+<dd>A list of the model’s layers</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the weights of an agent from an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str or list): The path to the HDF5 files. In case of algorithms using multiple models, it could be list of path of models.
+filename (str or list): The name to the HDF5 files. In case of algorithms using multiple models, it could be list of name of models.</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.metrics_names">
+<code class="descname">metrics_names</code><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.metrics_names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.policy">
+<code class="descname">policy</code><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.policy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.reset_states">
+<code class="descname">reset_states</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.reset_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>you can specify any logic which run whenever episode ends.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the weights of an agent as an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str): The path to where the weights should be saved.
+overwrite (boolean): If <cite>False</cite> and <cite>filepath</cite> already exists, raises an error.</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.test_policy">
+<code class="descname">test_policy</code><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.test_policy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.MADQN.MA_DQNAgent.update_target_model_hard">
+<code class="descname">update_target_model_hard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.MA_DQNAgent.update_target_model_hard" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.algorithm.MADQN.mean_q">
+<code class="descclassname">core.algorithm.MADQN.</code><code class="descname">mean_q</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.MADQN.mean_q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm.PPO">
+<span id="core-algorithm-ppo-module"></span><h2>core.algorithm.PPO module<a class="headerlink" href="#module-core.algorithm.PPO" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.algorithm.PPO.PPOAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.PPO.</code><code class="descname">PPOAgent</code><span class="sig-paren">(</span><em>state_size</em>, <em>action_size</em>, <em>continuous</em>, <em>actor</em>, <em>critic</em>, <em>gamma=0.99</em>, <em>loss_clipping=0.2</em>, <em>epochs=10</em>, <em>noise=1.0</em>, <em>entropy_loss=0.001</em>, <em>buffer_size=256</em>, <em>batch_size=64</em>, <em>load_model=True</em>, <em>training_mode=True</em>, <em>file_path_actor=''</em>, <em>file_path_critic=''</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.agent.Agent" title="core.common.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.agent.Agent</span></code></a></p>
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the agent after having executed the action returned by <cite>forward</cite>.
+If the policy is implemented by a neural network, this corresponds to a weight update using back-prop.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>reward (float): The observed reward after executing the action returned by <cite>forward</cite>.
+terminal (boolean): <cite>True</cite> if the new state of the environment is terminal.</dd>
+<dt># Returns</dt>
+<dd>List of metrics values</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt># Argument</dt>
+<dd>optimizer (object) : [0] = actor optimizer, [1] = critic optimizer
+metrics (Tensor) :  [0] = Keras Tensor as an advantage , [1] = Keras Tensor as an old_prediction</dd>
+<dt># Return</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.discounted_reward">
+<code class="descname">discounted_reward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.discounted_reward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the an observation from the environment and returns the action to be taken next.
+If the policy is implemented by a neural network, this corresponds to a forward (inference) pass.</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>observation (object): The current observation from the environment.</dd>
+<dt># Returns</dt>
+<dd>The next action to be executed in the environment.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the weights of an agent from an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str or list): The path to the HDF5 files. In case of algorithms using multiple models, it could be list of path of models.
+filename (str or list): The name to the HDF5 files. In case of algorithms using multiple models, it could be list of name of models.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.proximal_policy_optimization_loss">
+<code class="descname">proximal_policy_optimization_loss</code><span class="sig-paren">(</span><em>advantage</em>, <em>old_prediction</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.proximal_policy_optimization_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.proximal_policy_optimization_loss_continuous">
+<code class="descname">proximal_policy_optimization_loss_continuous</code><span class="sig-paren">(</span><em>advantage</em>, <em>old_prediction</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.proximal_policy_optimization_loss_continuous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.reset_env">
+<code class="descname">reset_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.reset_env" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.PPO.PPOAgent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>filepath</em>, <em>filename=None</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.PPO.PPOAgent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the weights of an agent as an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str): The path to where the weights should be saved.
+overwrite (boolean): If <cite>False</cite> and <cite>filepath</cite> already exists, raises an error.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm.QLearning">
+<span id="core-algorithm-qlearning-module"></span><h2>core.algorithm.QLearning module<a class="headerlink" href="#module-core.algorithm.QLearning" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.algorithm.QLearning.QLearningAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.QLearning.</code><code class="descname">QLearningAgent</code><span class="sig-paren">(</span><em>actions</em>, <em>learning_rate=0.01</em>, <em>discount_factor=0.9</em>, <em>epsilon=0.9</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.QLearning.QLearningAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="staticmethod">
+<dt id="core.algorithm.QLearning.QLearningAgent.arg_max">
+<em class="property">static </em><code class="descname">arg_max</code><span class="sig-paren">(</span><em>state_action</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.QLearning.QLearningAgent.arg_max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.QLearning.QLearningAgent.choose_action">
+<code class="descname">choose_action</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.QLearning.QLearningAgent.choose_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.QLearning.QLearningAgent.learn">
+<code class="descname">learn</code><span class="sig-paren">(</span><em>state</em>, <em>action</em>, <em>reward</em>, <em>done</em>, <em>next_state</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.QLearning.QLearningAgent.learn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm.REINFORCE">
+<span id="core-algorithm-reinforce-module"></span><h2>core.algorithm.REINFORCE module<a class="headerlink" href="#module-core.algorithm.REINFORCE" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.algorithm.REINFORCE.ReinforceAgent">
+<em class="property">class </em><code class="descclassname">core.algorithm.REINFORCE.</code><code class="descname">ReinforceAgent</code><span class="sig-paren">(</span><em>state_size</em>, <em>action_size</em>, <em>model</em>, <em>load_model=True</em>, <em>discount_factor=0.99</em>, <em>learning_rate=0.001</em>, <em>training_mode=True</em>, <em>file_path=''</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.REINFORCE.ReinforceAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="core.common.html#core.common.agent.Agent" title="core.common.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.common.agent.Agent</span></code></a></p>
+<dl class="method">
+<dt id="core.algorithm.REINFORCE.ReinforceAgent.backward">
+<code class="descname">backward</code><span class="sig-paren">(</span><em>reward</em>, <em>terminal</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.REINFORCE.ReinforceAgent.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the agent
+See the description in agent.py</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.REINFORCE.ReinforceAgent.compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>optimizer</em>, <em>metrics=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.REINFORCE.ReinforceAgent.compile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compiles an agent
+Define new optimizer instead of input optimizer
+See the description in agent.py</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.REINFORCE.ReinforceAgent.discount_rewards">
+<code class="descname">discount_rewards</code><span class="sig-paren">(</span><em>rewards</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.REINFORCE.ReinforceAgent.discount_rewards" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate discounted rewards</p>
+<dl class="docutils">
+<dt># Argument</dt>
+<dd>rewards (float): list of rewards</dd>
+<dt># Returns</dt>
+<dd>List of discounted rewards</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.REINFORCE.ReinforceAgent.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>observation</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.REINFORCE.ReinforceAgent.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get action to be taken from observation
+See the description in agent.py</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.REINFORCE.ReinforceAgent.load_weights">
+<code class="descname">load_weights</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.REINFORCE.ReinforceAgent.load_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the weights of an agent from an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str or list): The path to the HDF5 files. In case of algorithms using multiple models, it could be list of path of models.
+filename (str or list): The name to the HDF5 files. In case of algorithms using multiple models, it could be list of name of models.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.algorithm.REINFORCE.ReinforceAgent.save_weights">
+<code class="descname">save_weights</code><span class="sig-paren">(</span><em>file_path</em>, <em>overwrite=False</em><span class="sig-paren">)</span><a class="headerlink" href="#core.algorithm.REINFORCE.ReinforceAgent.save_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the weights of an agent as an HDF5 file.</p>
+<dl class="docutils">
+<dt># Arguments</dt>
+<dd>filepath (str): The path to where the weights should be saved.
+overwrite (boolean): If <cite>False</cite> and <cite>filepath</cite> already exists, raises an error.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.algorithm">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-core.algorithm" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="core.common.html" class="btn btn-neutral float-right" title="core.common package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="core.html" class="btn btn-neutral float-left" title="core package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, SAIDA
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

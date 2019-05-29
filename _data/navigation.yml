@@ -1,0 +1,33 @@
+# main links
+main:
+  - title: "Github"
+    url: https://github.com/TeamSAIDA/SAIDA_RL
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+docs:
+  - title : Getting Started
+    children:
+      - title: "Installation"
+        url: /installation
+      - title: "Tutorial"
+        url: /tutorial
+  - title: Environment
+    children:
+      - title: "Grid World"
+        url: /GridWorld
+      - title: "Vulture vs Zealot"
+        url: /VultureVSZealot
+      - title: "Avoid Observers"
+        url: /AvoidObserver
+      - title: "Avoid Reavers"
+        url: /AvoidReavers
+  - title: API
+    url: /api/index.html
+ 

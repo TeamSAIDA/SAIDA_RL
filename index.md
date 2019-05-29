@@ -1,7 +1,7 @@
 # SAIDA RL
 Welcome to SAIDA RL! This is the open-source platform for anyone who interests in Starcraft I and reinforcement learning to play and evaluate your model and algorithms.
 
-![starcraft](assets/image/Starcraft.jpg)
+![starcraft](assets/image/SAIDA_LOG.png)
 
 ## Table of Contents
 
@@ -187,8 +187,8 @@ Battle between one vulture and two zealot.
 
 ## Plan
 
-- [ ] We will update more challenging scenarios.
-- [ ] Multi Agent algorithms  
+- We will update more challenging scenarios soon.
+- Multi Agent algorithms
 
 ## References
 

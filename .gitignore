@@ -1,0 +1,93 @@
+# Compiled files
+
+*.slo
+*.lo
+*.o
+*.obj
+*.tlog
+*.so
+*.dylib
+cpp/*.dll
+*.lai
+*.la
+*.a
+*.log
+*.lastbuildstate
+
+# Executables
+
+*.out
+*.app
+
+# Other
+
+*.exp
+*.pdb
+*.ilk
+
+# VC++
+
+*.htm
+*.dep
+*.idb
+*.pdb
+*.ncb
+*.sdf
+*.opensdf
+*.suo
+
+
+# VC++ Directory
+
+Release_Log
+Debug
+.vs
+
+# Visual Studio Code Directory
+
+.vscode
+
+# Eclipse Directory
+
+bin
+
+# Virtual env
+venv
+
+# Python cache
+.idea
+__pycache__
+
+# Python Compiled files
+*.pyc
+
+# Python Result files
+python/save_graph
+python/save_model
+
+# Protobuf Compiled files
+protobuf/**/*.cc
+protobuf/**/*.h
+protobuf/**/*.py
+
+# ini
+cpp/SAIDA.ini
+
+tensorboard_logs
+
+# For docs resources
+*.gem
+*.sublime-project
+*.sublime-workspace
+.bundle
+.DS_Store
+.jekyll-metadata
+.sass-cache
+_asset_bundler_cache
+codekit-config.json
+example/_site
+Gemfile.lock
+node_modules
+npm-debug.log*
+_site
+

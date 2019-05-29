@@ -1,0 +1,134 @@
+syntax = "proto3";
+
+package Message;
+
+message TypeInfo {
+  int32 hp_max = 1;
+  int32 shield_max = 2;
+  int32 energy_max = 3;
+  int32 armor = 4;
+  int32 cooldown_max = 5;
+	int32 acceleration = 6;
+	double top_speed = 7;
+	int32 damage_amount = 8;
+	int32 damage_factor = 9;
+	int32 weapon_range = 10;
+	int32 sight_range = 11;
+	int32 seek_range = 12;
+}
+
+message TerrainInfo {
+  int32 nearest_obstacle_dist = 1;
+  int32 udi_int_1 = 2;
+  int32 udi_int_2 = 3;
+  int32 udi_int_3 = 4;
+  int32 udi_int_4 = 5;
+  double udi_double_1 = 6;
+  double udi_double_2 = 7;
+  double udi_double_3 = 8;
+  double udi_double_4 = 9;
+  bool udi_bool_1 = 10;
+  bool udi_bool_2 = 11;
+  bool udi_bool_3 = 12;
+  bool udi_bool_4 = 13;
+}
+
+message UInfo {
+	string unit_type = 1;
+  int32 hp = 2;
+  int32 shield = 3;
+  int32 energy = 4;
+  int32 cooldown = 5;
+  int32 pos_x = 6;
+  int32 pos_y = 7;
+	double velocity_x = 8;
+	double velocity_y = 9;
+	double angle = 10;
+	bool accelerating = 11;
+	bool braking = 12;
+	bool attacking = 13;
+	bool is_attack_frame = 14;
+	repeated bool invalid_action = 15;
+	repeated TerrainInfo pos_info = 16;
+}
+
+message Action {
+  int32 pos_x = 1;
+  int32 pos_y = 2;
+  int32 radius = 3;
+  float angle = 4;
+  int32 action_num = 5;
+
+}
+
+message InitReq {
+ 	string content = 1;
+  string content2 = 2;
+  int32 action_type = 3;
+  int32 version = 4;
+  int32 frames_per_step = 5;
+  int32 move_angle = 6;
+  int32 move_dist = 7;
+  int32 local_speed = 8;
+  bool no_gui = 9;
+  bool auto_kill_starcraft = 10;
+  int32 random_seed = 11;
+}
+
+message TypeInfoMap {
+	string key = 1;
+	TypeInfo value = 2;
+}
+
+message InitRes {
+  int32 num_action_space = 1;
+  TypeInfo my_unit_type = 2;
+  TypeInfo en_unit_type = 3;
+  repeated bool iswalkable = 4;
+  repeated TypeInfoMap unit_type_map = 5;
+}
+
+message StepReq {
+  repeated Action action = 1;
+}
+
+message State {
+	repeated UInfo my_unit = 1;
+  repeated UInfo en_unit = 2;
+}
+
+message Info {
+	repeated bool was_invalid_action = 1;
+}
+
+message StepRes {
+  int32 done = 1;
+  float reward = 2;
+  State next_state = 3;
+  Info info = 4;
+}
+
+message ResetReq {
+  string content = 1;
+}
+
+message ResetRes {
+  State next_state = 1;
+}
+
+
+message Create {
+  string content = 1;
+}
+
+message Close {
+  string content = 1;
+}
+
+message RenderReq {
+  string content = 1;
+}
+
+message RenderRes {
+  string content = 1;
+}

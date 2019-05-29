@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package Message.GridWorld;
+
+message InitRes {
+  int32 max_row = 1;
+  int32 max_col = 2;
+  int32 num_action_space = 3;
+  string map = 4;
+}
+
+message State {
+  string index = 1;
+}
+
+message StepRes {
+  int32 done = 1;
+  float reward = 2;
+  State next_state = 3;
+}
+
+message ResetRes {
+  State next_state = 1;
+}
+
+message RenderReq {
+	repeated float q_table = 1;
+}

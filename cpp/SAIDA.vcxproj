@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Log|Win32">
+      <Configuration>Release_Log</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AE3B9DC4-5FBB-4B57-8AB4-0D84D8649D78}</ProjectGuid>
+    <RootNamespace>SAIDA</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>SAIDA</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Log|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Log|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Log|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Log|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:/StarCraft/bwlibrary/BWAPI440/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/D_ITERATOR_DEBUG_LEVEL=2 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PreLinkEvent />
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>Advapi32.lib;ws2_32.lib;C:/StarCraft/bwlibrary/BWAPI440/lib/BWAPILIBd.lib;C:/StarCraft/bwlibrary/BWAPI440/lib/BWAPIClientd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:/StarCraft/bwlibrary/BWAPI440/include;$(ProjectDir)/../protobuf/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <PreLinkEvent />
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>Advapi32.lib;ws2_32.lib;C:/StarCraft/bwlibrary/BWAPI440/lib/BWAPILIB.lib;C:/StarCraft/bwlibrary/BWAPI440/lib/BWAPIClient.lib;$(ProjectDir)/../protobuf/lib/libprotobuf.lib;$(ProjectDir)/../protobuf/lib/libprotobuf-lite.lib;$(ProjectDir)/../protobuf/lib/libprotoc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Log|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:/StarCraft/bwlibrary/BWAPI440/include;$(ProjectDir)/../protobuf/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;NDEBUG;_CONSOLE;SERVERLOG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <PreLinkEvent />
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>Advapi32.lib;ws2_32.lib;C:/StarCraft/bwlibrary/BWAPI440/lib/BWAPILIB.lib;C:/StarCraft/bwlibrary/BWAPI440/lib/BWAPIClient.lib;$(ProjectDir)/../protobuf/lib/libprotobuf.lib;$(ProjectDir)/../protobuf/lib/libprotobuf-lite.lib;$(ProjectDir)/../protobuf/lib/libprotoc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(ProjectName).exe" "$(ProjectDir)Release\SAIDA\$(ProjectName).exe" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SAIDA\DeepLearning\AvoidObservers\RLAvoidObservers.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\AvoidReavers\RLAvoidReavers.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\AvoidZerglings\RLAvoidZerglings.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\GoliathVsGoliath\RLGoliathVsGoliath.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\GridWorld\RLGridWorld.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\Gym.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\GymFactory.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\MarineScvDefence\RLMarineScvDefence.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\MarineVsZealot\RLMarineVsZealot.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\MarineVsZergling\RLMarineVsZergling.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\message\common.pb.cc" />
+    <ClCompile Include="SAIDA\DeepLearning\message\gridWorld.pb.cc" />
+    <ClCompile Include="SAIDA\DeepLearning\message\marineScv.pb.cc" />
+    <ClCompile Include="SAIDA\DeepLearning\message\MessageUtil.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\RLSharedMemory.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\SharedMemory.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\SharedMemoryManager.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\SharedMemoryMessageHandler.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\Supervised.cpp" />
+    <ClCompile Include="SAIDA\BWEM\EasyBMP_1.06\EasyBMP.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\area.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\base.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\bwapiExt.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\bwem.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\cp.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\examples.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\exampleWall.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\graph.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\gridMap.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\map.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\mapDrawer.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\mapImpl.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\mapPrinter.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\neutral.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\tiles.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\utils.cpp" />
+    <ClCompile Include="SAIDA\BWEM\src\winutils.cpp" />
+    <ClCompile Include="SAIDA\Common.cpp" />
+    <ClCompile Include="SAIDA\Config.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\VultureVsZealot\RLVultureVsZealot.cpp" />
+    <ClCompile Include="SAIDA\DeepLearning\ZealotVsZealot\RLZealotVsZealot.cpp" />
+    <ClCompile Include="SAIDA\GameCommander.cpp" />
+    <ClCompile Include="SAIDA\InformationManager.cpp" />
+    <ClCompile Include="SAIDA\CommandUtil.cpp" />
+    <ClCompile Include="SAIDA\MyBotModule.cpp" />
+    <ClCompile Include="SAIDA\main.cpp" />
+    <ClCompile Include="SAIDA\SaidaUtil.cpp" />
+    <ClCompile Include="SAIDA\UnitData\UnitData.cpp" />
+    <ClCompile Include="SAIDA\UnitData\UnitInfo.cpp" />
+    <ClCompile Include="SAIDA\UXManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SAIDA\AbstractManager.h" />
+    <ClInclude Include="SAIDA\DeepLearning\AvoidObservers\RLAvoidObservers.h" />
+    <ClInclude Include="SAIDA\DeepLearning\AvoidReavers\RLAvoidReavers.h" />
+    <ClInclude Include="SAIDA\DeepLearning\AvoidZerglings\RLAvoidZerglings.h" />
+    <ClInclude Include="SAIDA\DeepLearning\ConnCommon.h" />
+    <ClInclude Include="SAIDA\DeepLearning\GoliathVsGoliath\RLGoliathVsGoliath.h" />
+    <ClInclude Include="SAIDA\DeepLearning\GridWorld\RLGridWorld.h" />
+    <ClInclude Include="SAIDA\DeepLearning\GymFactory.h" />
+    <ClInclude Include="SAIDA\DeepLearning\MarineScvDefence\RLMarineScvDefence.h" />
+    <ClInclude Include="SAIDA\DeepLearning\MarineVsZealot\RLMarineVsZealot.h" />
+    <ClInclude Include="SAIDA\DeepLearning\MarineVsZergling\RLMarineVsZergling.h" />
+    <ClInclude Include="SAIDA\DeepLearning\MessageHandler.h" />
+    <ClInclude Include="SAIDA\DeepLearning\Gym.h" />
+    <ClInclude Include="SAIDA\DeepLearning\message\common.pb.h" />
+    <ClInclude Include="SAIDA\DeepLearning\message\gridWorld.pb.h" />
+    <ClInclude Include="SAIDA\DeepLearning\message\marineScv.pb.h" />
+    <ClInclude Include="SAIDA\DeepLearning\message\MessageUtil.h" />
+    <ClInclude Include="SAIDA\DeepLearning\RLSharedMemory.h" />
+    <ClInclude Include="SAIDA\DeepLearning\SharedMemory.h" />
+    <ClInclude Include="SAIDA\DeepLearning\SharedMemoryManager.h" />
+    <ClInclude Include="SAIDA\DeepLearning\SharedMemoryMessageHandler.h" />
+    <ClInclude Include="SAIDA\DeepLearning\Supervised.h" />
+    <ClInclude Include="SAIDA\BWEM\EasyBMP_1.06\EasyBMP.h" />
+    <ClInclude Include="SAIDA\BWEM\src\area.h" />
+    <ClInclude Include="SAIDA\BWEM\src\base.h" />
+    <ClInclude Include="SAIDA\BWEM\src\bwapiExt.h" />
+    <ClInclude Include="SAIDA\BWEM\src\bwem.h" />
+    <ClInclude Include="SAIDA\BWEM\src\cp.h" />
+    <ClInclude Include="SAIDA\BWEM\src\defs.h" />
+    <ClInclude Include="SAIDA\BWEM\src\examples.h" />
+    <ClInclude Include="SAIDA\BWEM\src\exampleWall.h" />
+    <ClInclude Include="SAIDA\BWEM\src\graph.h" />
+    <ClInclude Include="SAIDA\BWEM\src\gridMap.h" />
+    <ClInclude Include="SAIDA\BWEM\src\map.h" />
+    <ClInclude Include="SAIDA\BWEM\src\mapDrawer.h" />
+    <ClInclude Include="SAIDA\BWEM\src\mapImpl.h" />
+    <ClInclude Include="SAIDA\BWEM\src\mapPrinter.h" />
+    <ClInclude Include="SAIDA\BWEM\src\neutral.h" />
+    <ClInclude Include="SAIDA\BWEM\src\tiles.h" />
+    <ClInclude Include="SAIDA\BWEM\src\utils.h" />
+    <ClInclude Include="SAIDA\BWEM\src\winutils.h" />
+    <ClInclude Include="SAIDA\Common.h" />
+    <ClInclude Include="SAIDA\Config.h" />
+    <ClInclude Include="SAIDA\DeepLearning\VultureVsZealot\RLVultureVsZealot.h" />
+    <ClInclude Include="SAIDA\DeepLearning\ZealotVsZealot\RLZealotVsZealot.h" />
+    <ClInclude Include="SAIDA\GameCommander.h" />
+    <ClInclude Include="SAIDA\InformationManager.h" />
+    <ClInclude Include="SAIDA\CommandUtil.h" />
+    <ClInclude Include="SAIDA\MyBotModule.h" />
+    <ClInclude Include="SAIDA\SaidaUtil.h" />
+    <ClInclude Include="SAIDA\UnitData\UnitData.h" />
+    <ClInclude Include="SAIDA\UnitData\UnitInfo.h" />
+    <ClInclude Include="SAIDA\UXManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SAIDA\BWEM\LICENSE.txt" />
+    <Text Include="SAIDA\BWEM\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAIDA\BWEM\doc\html\about.html" />
+    <None Include="SAIDA\BWEM\doc\html\download.html" />
+    <None Include="SAIDA\BWEM\doc\html\faq.html" />
+    <None Include="SAIDA\BWEM\doc\html\features.html" />
+    <None Include="SAIDA\BWEM\doc\html\help.html" />
+    <None Include="SAIDA\BWEM\doc\html\index.html" />
+    <None Include="SAIDA\BWEM\doc\html\interactiveIron.html" />
+    <None Include="SAIDA\BWEM\doc\html\Iron.html" />
+    <None Include="SAIDA\BWEM\doc\html\start.html" />
+    <None Include="SAIDA\BWEM\doc\html\Stone.html" />
+    <None Include="SAIDA\BWEM\doc\html\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="SAIDA\BWEM\doc\html\Andromeda.png" />
+    <Image Include="SAIDA\BWEM\doc\html\Baby Steps.png" />
+    <Image Include="SAIDA\BWEM\doc\html\Great Barrier Reef.png" />
+    <Image Include="SAIDA\BWEM\doc\html\Heartbreak Ridge.png" />
+    <Image Include="SAIDA\BWEM\doc\html\Iron.jpg" />
+    <Image Include="SAIDA\BWEM\doc\html\Ride of Valkyries.png" />
+    <Image Include="SAIDA\BWEM\doc\html\Stone.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

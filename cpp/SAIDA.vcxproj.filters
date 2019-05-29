@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="SAIDA\main.cpp">
+      <Filter>BotClient</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\MyBotModule.cpp">
+      <Filter>BotClient</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\CommandUtil.cpp">
+      <Filter>BotSource</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\GameCommander.cpp">
+      <Filter>BotSource</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\UXManager.cpp">
+      <Filter>BotSource</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\Common.cpp">
+      <Filter>BotSource\CommonUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\Config.cpp">
+      <Filter>BotSource\CommonUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\area.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\base.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\bwapiExt.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\bwem.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\cp.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\examples.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\exampleWall.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\graph.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\gridMap.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\map.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\mapDrawer.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\mapImpl.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\mapPrinter.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\neutral.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\tiles.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\utils.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\src\winutils.cpp">
+      <Filter>BWEM\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\BWEM\EasyBMP_1.06\EasyBMP.cpp">
+      <Filter>BWEM\EasyBMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\SaidaUtil.cpp">
+      <Filter>BotSource</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\SharedMemoryManager.cpp">
+      <Filter>DeepLearning</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\Supervised.cpp">
+      <Filter>DeepLearning</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\UnitData\UnitData.cpp">
+      <Filter>BotSource\UnitData</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\UnitData\UnitInfo.cpp">
+      <Filter>BotSource\UnitData</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\InformationManager.cpp">
+      <Filter>BotSource</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\RLSharedMemory.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\SharedMemory.cpp">
+      <Filter>DeepLearning\Communication\SharedMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\SharedMemoryMessageHandler.cpp">
+      <Filter>DeepLearning\Message\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\GymFactory.cpp">
+      <Filter>DeepLearning\RL</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\Gym.cpp">
+      <Filter>DeepLearning\RL\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\VultureVsZealot\RLVultureVsZealot.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\AvoidObservers\RLAvoidObservers.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\MarineVsZergling\RLMarineVsZergling.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\AvoidReavers\RLAvoidReavers.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\message\common.pb.cc">
+      <Filter>DeepLearning\Message\MessageType</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\GridWorld\RLGridWorld.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\message\gridWorld.pb.cc">
+      <Filter>DeepLearning\Message\MessageType</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\message\marineScv.pb.cc">
+      <Filter>DeepLearning\Message\MessageType</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\MarineScvDefence\RLMarineScvDefence.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\AvoidZerglings\RLAvoidZerglings.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\GoliathVsGoliath\RLGoliathVsGoliath.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\MarineVsZealot\RLMarineVsZealot.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\ZealotVsZealot\RLZealotVsZealot.cpp">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SAIDA\DeepLearning\message\MessageUtil.cpp">
+      <Filter>DeepLearning\Message</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SAIDA\MyBotModule.h">
+      <Filter>BotClient</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\CommandUtil.h">
+      <Filter>BotSource</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\GameCommander.h">
+      <Filter>BotSource</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\UXManager.h">
+      <Filter>BotSource</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\Common.h">
+      <Filter>BotSource\CommonUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\Config.h">
+      <Filter>BotSource\CommonUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\area.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\base.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\bwapiExt.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\bwem.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\cp.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\defs.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\examples.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\exampleWall.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\graph.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\gridMap.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\map.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\mapDrawer.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\mapImpl.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\mapPrinter.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\neutral.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\tiles.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\utils.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\src\winutils.h">
+      <Filter>BWEM\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\BWEM\EasyBMP_1.06\EasyBMP.h">
+      <Filter>BWEM\EasyBMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\SaidaUtil.h">
+      <Filter>BotSource</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\SharedMemoryManager.h">
+      <Filter>DeepLearning</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\Supervised.h">
+      <Filter>DeepLearning</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\UnitData\UnitData.h">
+      <Filter>BotSource\UnitData</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\UnitData\UnitInfo.h">
+      <Filter>BotSource\UnitData</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\AbstractManager.h">
+      <Filter>BotSource</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\InformationManager.h">
+      <Filter>BotSource</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\RLSharedMemory.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\Gym.h">
+      <Filter>DeepLearning\RL\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\SharedMemory.h">
+      <Filter>DeepLearning\Communication\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\SharedMemoryMessageHandler.h">
+      <Filter>DeepLearning\Message\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\MessageHandler.h">
+      <Filter>DeepLearning\Message\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\GymFactory.h">
+      <Filter>DeepLearning\RL</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\ConnCommon.h">
+      <Filter>DeepLearning\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\VultureVsZealot\RLVultureVsZealot.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\AvoidObservers\RLAvoidObservers.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\MarineVsZergling\RLMarineVsZergling.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\AvoidReavers\RLAvoidReavers.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\message\common.pb.h">
+      <Filter>DeepLearning\Message\MessageType</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\GridWorld\RLGridWorld.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\message\gridWorld.pb.h">
+      <Filter>DeepLearning\Message\MessageType</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\message\marineScv.pb.h">
+      <Filter>DeepLearning\Message\MessageType</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\MarineScvDefence\RLMarineScvDefence.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\AvoidZerglings\RLAvoidZerglings.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\GoliathVsGoliath\RLGoliathVsGoliath.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\MarineVsZealot\RLMarineVsZealot.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\ZealotVsZealot\RLZealotVsZealot.h">
+      <Filter>DeepLearning\RL\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SAIDA\DeepLearning\message\MessageUtil.h">
+      <Filter>DeepLearning\Message</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="BotSource">
+      <UniqueIdentifier>{295ff9ca-e7f5-4de0-ba47-19bbf0421850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BotSource\CommonUtil">
+      <UniqueIdentifier>{41c4e5e4-ae7a-4210-b97c-af7eb92ab673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BotClient">
+      <UniqueIdentifier>{c8cb4e54-d671-49ab-96cc-8408316ab2bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BWEM">
+      <UniqueIdentifier>{dde37e20-e1a9-47d5-a545-7c468f8272ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BWEM\doc">
+      <UniqueIdentifier>{d6953c2a-7779-4dd5-bfdc-b685a45f1e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BWEM\doc\html">
+      <UniqueIdentifier>{16acb652-6a36-4b29-aa19-706b386068d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BWEM\src">
+      <UniqueIdentifier>{309ed729-bdf3-4e97-9397-39a5a9990462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BWEM\EasyBMP">
+      <UniqueIdentifier>{16556d8f-be1e-4934-ba24-153ec0755465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning">
+      <UniqueIdentifier>{aaf91a71-d9d8-44ae-8ffc-2650a807a033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BotSource\UnitData">
+      <UniqueIdentifier>{ec150a9e-0e91-4b67-8962-aa8316034eed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning\RL">
+      <UniqueIdentifier>{2bd36720-d177-4bed-9e7f-a72fb60b58d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning\RL\Interface">
+      <UniqueIdentifier>{662373de-59e3-4580-bcaa-563e5ca50ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning\RL\Impl">
+      <UniqueIdentifier>{6de57395-7860-42ce-9fe1-61ded7d2d6fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning\Communication">
+      <UniqueIdentifier>{4ec4d74d-acb5-4e83-aa82-f8a1c8db7de5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning\Communication\SharedMemory">
+      <UniqueIdentifier>{646b4648-6450-4644-acdd-95ca705f82ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning\Message">
+      <UniqueIdentifier>{a78f6a4f-0baf-425b-95ae-87a3833a56f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning\Message\Handler">
+      <UniqueIdentifier>{329f9675-7d45-4ddf-9e3f-9228c0241678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeepLearning\Message\MessageType">
+      <UniqueIdentifier>{4ffb51a1-4643-4bec-8c4c-160f10c2a9f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SAIDA\BWEM\LICENSE.txt">
+      <Filter>BWEM</Filter>
+    </Text>
+    <Text Include="SAIDA\BWEM\README.txt">
+      <Filter>BWEM</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAIDA\BWEM\doc\html\about.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\download.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\faq.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\features.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\help.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\index.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\interactiveIron.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\Iron.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\start.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\Stone.html">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+    <None Include="SAIDA\BWEM\doc\html\style.css">
+      <Filter>BWEM\doc\html</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="SAIDA\BWEM\doc\html\Andromeda.png">
+      <Filter>BWEM\doc\html</Filter>
+    </Image>
+    <Image Include="SAIDA\BWEM\doc\html\Baby Steps.png">
+      <Filter>BWEM\doc\html</Filter>
+    </Image>
+    <Image Include="SAIDA\BWEM\doc\html\Great Barrier Reef.png">
+      <Filter>BWEM\doc\html</Filter>
+    </Image>
+    <Image Include="SAIDA\BWEM\doc\html\Heartbreak Ridge.png">
+      <Filter>BWEM\doc\html</Filter>
+    </Image>
+    <Image Include="SAIDA\BWEM\doc\html\Iron.jpg">
+      <Filter>BWEM\doc\html</Filter>
+    </Image>
+    <Image Include="SAIDA\BWEM\doc\html\Ride of Valkyries.png">
+      <Filter>BWEM\doc\html</Filter>
+    </Image>
+    <Image Include="SAIDA\BWEM\doc\html\Stone.jpg">
+      <Filter>BWEM\doc\html</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

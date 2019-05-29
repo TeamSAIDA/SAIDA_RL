@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SAIDA", "SAIDA.vcxproj", "{AE3B9DC4-5FBB-4B57-8AB4-0D84D8649D78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release_Log|Win32 = Release_Log|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE3B9DC4-5FBB-4B57-8AB4-0D84D8649D78}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AE3B9DC4-5FBB-4B57-8AB4-0D84D8649D78}.Debug|Win32.Build.0 = Debug|Win32
+		{AE3B9DC4-5FBB-4B57-8AB4-0D84D8649D78}.Release_Log|Win32.ActiveCfg = Release_Log|Win32
+		{AE3B9DC4-5FBB-4B57-8AB4-0D84D8649D78}.Release_Log|Win32.Build.0 = Release_Log|Win32
+		{AE3B9DC4-5FBB-4B57-8AB4-0D84D8649D78}.Release|Win32.ActiveCfg = Release|Win32
+		{AE3B9DC4-5FBB-4B57-8AB4-0D84D8649D78}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {770B51F9-87AD-4045-B463-EA652D605C7C}
+	EndGlobalSection
+EndGlobal

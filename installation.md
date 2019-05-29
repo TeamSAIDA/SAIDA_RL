@@ -22,8 +22,13 @@ git clone https://github.com/TeamSAIDA/SAIDA_RL.git
 For your comfort, you can install all required dependencies with a single command below.
 
 ```
+cd SAIDA_RL\python
 pip install -r requirements.txt
 ```
+
+And add __path\to\SAIDA_RL\python__ to __PYTHONPATH__ environment variable like below.
+
+
 After that, run batch file "install\copyFiles.cmd" to copy usemap and SAIDA RL execute files to StarCraft folder.
 ```
 install\copyFiles.cmd

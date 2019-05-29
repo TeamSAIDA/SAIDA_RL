@@ -1,7 +1,7 @@
 # SAIDA RL
 Welcome to SAIDA RL! This is the open-source platform for anyone who interests in Starcraft I and reinforcement learning to play and evaluate your model and algorithms.
 
-![starcraft](/materials/Starcraft.jpg)
+![starcraft](/materials/SAIDA_LOG.png)
 
 ## Table of Contents
 
@@ -79,26 +79,26 @@ We have various challenging scenarios for you to motivate trying to solve with r
 	</tr>
 	<tr>
 	   <td>Vul_VS_Zeal_v0(~3)</td>
-	   <td>[VultureVsZealot](https://TeamSAIDA.github.io/SAIDA_RL/VultureVSZealot/)</td>
+		<td><a href="https://TeamSAIDA.github.io/SAIDA_RL/VultureVSZealot/">VultureVsZealot</a></td>
 	   <td>Agent(Terran Vulture) should kill all Protoss Zealots while being damaged minimally.
 	   The number of zealots and existence of terrain depend on the version of map.</td>
 	   <td>It depends on the version of map.</td>
 	   <td>Vulture</td>
 	   <td>Move to specific direction, Patrol to enemy(meaning attack)</td>
-	   <td>Reach the goal or bumped with observers</td>
+	   <td>kill all Zealots or defeated</td>
 	</tr>
 	<tr>
 	   <td>Avoid_Observer_v0</td>
-	   <td>[AvoidObserver](https://TeamSAIDA.github.io/SAIDA_RL/AvoidObserver/)</td>
+		<td><a href="https://TeamSAIDA.github.io/SAIDA_RL/AvoidObserver/">AvoidObserver</a></td>
 	   <td>Reach the top of map while avoiding observers in the middle area.</td>
 	   <td>N</td>
 	   <td>Scourge</td>
 	   <td>Move to specific direction</td>
-	   <td>kill all Zealots or defeated</td>
+	   <td>Reach the goal or bumped with observers</td>
 	</tr>
 	<tr>
 	   <td>Avoid_Reaver_v0</td>
-	   <td>[AvoidReaver](https://TeamSAIDA.github.io/SAIDA_RL/AvoidReavers/)</td>
+		<td><a href="https://TeamSAIDA.github.io/SAIDA_RL/AvoidReavers/">AvoidReaver</a></td>
 	   <td>Reach the right-bottom area of the map while avoiding reavers in the middle area. </td>
 	   <td>N</td>
 	   <td>DropShip</td>
@@ -188,8 +188,8 @@ Battle between one vulture and two zealot.
 
 ## Plan
 
-- [ ] We will update more challenging scenarios.
-- [ ] Multi Agent algorithms  
+- We will update more challenging scenarios.
+- Multi Agent algorithms  
 
 ## References
 

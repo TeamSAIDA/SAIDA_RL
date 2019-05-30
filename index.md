@@ -158,7 +158,7 @@ we divided algorithms to three categories.
 
 
 ## Working Examples
-Demos for well trained agents' play
+Demos for trained agent's play
 
 
 ### Grid World in Starcraft I  

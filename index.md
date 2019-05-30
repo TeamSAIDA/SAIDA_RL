@@ -8,7 +8,6 @@ Welcome to SAIDA RL! This is the open-source platform for anyone who interests i
 * [What is SAIDA RL?](#what-is-saida-rl)
 * [Basic](#basics)
 * [Installation](#installation)
-	* [Prerequisites](#prerequisites)
 * [Guide](#guide)
     * [Installation](#installation)
 	* [Tutorials](#tutorials)
@@ -21,8 +20,11 @@ Welcome to SAIDA RL! This is the open-source platform for anyone who interests i
 * [Reference](#references)
 
 
-## What is SAIDA RL? 
-It is a simulator for users to train and evaluate their own algorithms and models in challenging Starcraft I environment. It is not only provide simulator itself, but also provide tutorials, development api document. It is specialized in Starcraft I and provides many scenarios. You can taste very fresh and challenging game and you can try your own idea to make starcraft unit better. 
+## What is SAIDA RL?
+It is a framework for developing reinforcement learning algorithms with Starcraft I environment.
+It includes the simulation environment for Starcraft itself and also tutorials, API document, and various scenarios.  
+You can develop your own agent and comparing algorithms through challenging and exciting scenarios.
+Have fun!
 
 ![architecture](assets/image/architecture.png)
 
@@ -57,7 +59,7 @@ You can access three documentations to run a agent in this environment.
 [Link](https://TeamSAIDA.github.io/SAIDA_RL/api/index.html)
 
 ## Environment
-We built environment based on openai gym. it consists of interface like below. 
+We built environment based on OpenAI gym. it consists of interface like below. 
 
 ### Agent
 
@@ -165,12 +167,12 @@ for warming up, you can try this problem by yourselves.
 ![Grid_World](/SAIDA_RL/assets/image/Grid_World.gif)
 
 ### Avoid Observers 
-Scurege's goal is to reach top area of current map avoiding conflict with observers surrounded
+Scourge's goal is to reach top area of current map avoiding collision with Protoss Observers surrounded
    
 ![Avoid_observer](/SAIDA_RL/assets/image/Avoid_Observer.gif)
 
 ### Avoid Reavers
-Reaver's goal is to reach bottom area of current map avoiding conflict with drop ship surrounded
+Dropship's goal is to reach bottom area of current map avoiding collision with Protoss Reavers surrounded
 
 ![Avoid_Reaver](/SAIDA_RL/assets/image/Avoid_Reaver.gif)
 

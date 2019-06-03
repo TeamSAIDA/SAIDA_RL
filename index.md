@@ -1,5 +1,5 @@
 # SAIDA RL
-Welcome to SAIDA RL! This is the open-source platform for anyone who interests in Starcraft I and reinforcement learning to play and evaluate your model and algorithms.
+Welcome to SAIDA RL! This is the open-source platform for anyone who is interested in Starcraft I and reinforcement learning to play and evaluate your model and algorithms.
 
 ![starcraft](assets/image/SAIDA_LOG.png)
 

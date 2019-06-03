@@ -61,7 +61,7 @@ We built environment based on openai gym. it consists of interface like below.
 
 ### Agent
 
-Agent we provided is based on [keras-rl](https://github.com/keras-rl/keras-rl) which is one of top reinforcement learning framework commonly used and we upgraded it by oursevles to support more. But you can use your own agent if you want. We decoupled between agent and environment. there is no dependencies so that, it is compatible with any numerical computation library, such as TensorFlow or Theano. You can use it from Python code, and soon from other languages.  If you're not sure where to start, we recommend beginning with the [tutorials](https://TeamSAIDA.github.io/SAIDA_RL/tutorial/) on our site.
+Agent we provide is based on [keras-rl](https://github.com/keras-rl/keras-rl) which is one of top reinforcement learning framework commonly used and we upgraded it by oursevles to support more. But you can use your own agent if you want. We decoupled between agent and environment. there is no dependencies so that, it is compatible with most numerical computation library, such as TensorFlow or Theano. You can use it from Python code, and soon from other languages.  If you're not sure where to start, we recommend beginning with the [tutorials](https://TeamSAIDA.github.io/SAIDA_RL/tutorial/) on our site.
 
 ### Scenarios
 

@@ -317,7 +317,7 @@ Log will be displayed in every episode and log contents are changed according to
 - mean reward : average value of episode reward
 - mean action : average value of agent's action that executed during an episode  
 
-![avoid_reavers.gif](/SAIDA_RL/assets/image/Avoid_reaver_2.png)
+![avoid_reavers.gif](/SAIDA_RL/assets/image/avoid_reaver_2.png)
 
 ### Save the weight
 

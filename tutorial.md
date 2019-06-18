@@ -171,7 +171,7 @@ class ReaverProcessor(Processor):
     # Reshape your reward (Optional)
     def reward_reshape(self, reward):
         # Maybe I can give more incentive to the agent, when the agent has reached the goal.
-        if reward == 1:  
+        if reward == 1 :  
             reward = reward * 2
         # And prevent to stay at safe start position rather then moving, give a small negative reward in every step.
         elif reward == -1 :
@@ -317,7 +317,7 @@ Log will be displayed in every episode and log contents are changed according to
 - mean reward : average value of episode reward
 - mean action : average value of agent's action that executed during an episode  
 
-![avoid_reavers.gif](/SAIDA_RL/assets/image/avoid_reaver_2.png)
+![avoid_reavers.gif](/SAIDA_RL/assets/image/avoid_reaver_2.PNG)
 
 ### Save the weight
 
